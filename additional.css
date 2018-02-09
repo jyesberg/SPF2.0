@@ -16,6 +16,69 @@
 .spf-top-nav ul li ul li a {padding: 1em .8em;}
 .spf-top-nav ul.uikit-link-list li ul li:hover {background-color: #edd7e9; border-bottom: solid 4px #3f2583;}
 .spf-top-nav ul.uikit-link-list li ul li a:hover {background-color: transparent; border-bottom: 4px solid transparent;}
+.spf-top-nav ul li ul li ul {left: 179px;top: 0;}
+.spf-top-nav ul li ul li ul li a {box-sizing: border-box; width: 179px;}
+
+/* top menu mobile toggle style */
+
+.spf-top-nav-mobile {display:none;}
+.spf-top-nav ul.uikit-link-list li ul li {border-bottom:4px solid transparent;}
+
+@media (max-width:767px) {
+ .spf-top-nav-mobile {display:block;}
+ .spf-top-nav {display:none;}    
+}
+
+.spf-top-nav-mobile ul.uikit-link-list.uikit-link-list--inline {
+    display:block;
+    padding-bottom:0;
+}
+
+.spf-top-nav-mobile ul.uikit-link-list.uikit-link-list--inline.closed {
+    display:none;
+}
+
+nav.spf-top-nav-mobile ul li {
+    width:100%;
+    background:#f0f3f5;
+    list-style-type: none;
+    margin:0;
+}
+
+nav.spf-top-nav-mobile ul {margin:0; padding:0;}
+
+nav.spf-top-nav-mobile ul li a {
+    display:block;
+    padding:15px 5px;
+    border-bottom: 1px solid #000;
+}
+
+nav.spf-top-nav-mobile ul li li>a {
+    padding-left:15px;
+}
+
+nav.spf-top-nav-mobile ul li li li>a {
+    padding-left:25px;
+}
+
+.spf-top-nav-mobile ul li ul li {
+    background: #fff;
+}
+
+.spf-top-nav-mobile>ul>li.has-children>a:after {
+    content: '\f0da';
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    float: right;
+    font-size: 1.2rem;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 5%;
+}
+/* end top menu mobile toggle style */
+
 
 /* bringing across the visually hidden class from SPF1 */
 .visuallyhidden {
