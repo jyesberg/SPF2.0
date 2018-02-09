@@ -1,0 +1,492 @@
+<MySource_AREA id_name="template_options" design_area="declared_vars" print="no">
+    <MySource_DECLARE name="middlecolumn" value="col-md-8 col-md-offset-1" type="text" description="col-md-8 col-md-offset-1 without side nav and col-md-8 with sidenav"/>
+</MySource_AREA>
+
+<MySource_AREA id_name="breadcrumbs2" design_area="asset_lineage" print="no">
+    <MySource_SET name="start_at_level" value="1" />
+    <MySource_SET name="levels_to_print" value="1" />
+    <MySource_SET name="prefix_with_home_link" value="true" />
+    <MySource_SET name="suffix_with_current_link" value="true" />
+    <MySource_SET name="prefix_with_divider" value="false" />
+    <MySource_SET name="suffix_with_divider" value="false" />
+    <MySource_DIVIDER></MySource_DIVIDER>
+    <MySource_ASSET>
+        <a href="<MySource_PRINT var="asset_link" />" class="is-active"><MySource_PRINT var="asset_short_name" /></a>
+    </MySource_ASSET>
+</MySource_AREA>
+
+<MySource_AREA id_name="global_links" design_area="declared_vars" print="no">
+    <MySource_DECLARE name="header_link" value="/" type="text" description="URL for header logo"/>
+    <MySource_DECLARE name="about" value="#" type="text" description="URL for About Us header link"/>
+    <MySource_DECLARE name="contact" value="#" type="text" description="URL for Contact Us header link"/>
+    <MySource_DECLARE name="header_logo" value="./?a=1115272" type="text" description="URL for Actgov logo"/>
+    <MySource_DECLARE name="news" value="#" type="text" description="URL for Feedback footer link"/>
+    <MySource_DECLARE name="feedback" value="https://www.accesscanberra.act.gov.au/app/ask/" type="text" description="URL for news footer link"/>
+    <MySource_DECLARE name="languages" value="#" type="text" description="URL for Languages footer link"/>
+    <MySource_DECLARE name="sitemap" value="#" type="text" description="URL for Sitemap footer link"/>
+    <MySource_DECLARE name="jobs" value="http://www.jobs.act.gov.au" type="text" description="URL for Jobs ACT footer link"/>
+    <MySource_DECLARE name="privacy" value="#" type="text" description="URL for Privacy footer link"/>
+    <MySource_DECLARE name="disclaimer" value="#" type="text" description="URL for Disclaimer footer link"/>
+    <MySource_DECLARE name="copyright" value="#" type="text" description="URL for Copyright footer link"/>
+    <MySource_DECLARE name="accessibility" value="#" type="text" description="URL for Accessibility footer link"/>
+    <MySource_DECLARE name="ga_code" value="UA-xxxxxxx-x" type="text" description="Google Analytics Code (forget this and you have no analytics)"/>
+</MySource_AREA>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title><MySource_PRINT id_name="__global__" var="asset_short_name" /> - <MySource_PRINT id_name="__global__" var="site_name" /></title>
+    <MySource_AREA id_name="metadata" design_area="metadata" />
+    <link rel="stylesheet" type="text/css" href="./?a=1115253">
+    <link rel="stylesheet" type="text/css" href="./?a=1115260">
+    <link rel="stylesheet" type="text/css" href="./?a=1124492">
+    <MySource_AREA id_name="custom" design_area="linked_css" />
+</head>
+
+<body class='spf-body uikit-body uikit-grid'>
+
+    <!-- Header -->
+    <div class="row">
+        <div class='col-md-12 no-padding'>
+            <header class="uikit-header uikit-header--light">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="<MySource_PRINT id_name="global_links" var="header_link" />" title="Header logo title" class="uikit-header__logo-wrapper">
+                                <ul class="uikit-link-list uikit-link-list--inline">
+                                    <li class="uikit-header__logo">
+                                        <img src="<MySource_PRINT id_name="global_links" var="header_logo" />" alt="Header logo" class="uikit-header__logo-image" />
+                                    </li>
+                                    <li class="uikit-header__logo">
+                                        <span class="uikit-header__logo-text"><MySource_PRINT id_name="__global__" var="site_name" /></span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-4">
+                            <div class="row header-search-row">
+                                <div class="col-md-12">
+                                    <div class="pull-right header-menu">
+                                        <ul class="uikit-link-list uikit-link-list--inline">
+                                            <li class="">
+                                                <a href="<MySource_PRINT id_name="global_links" var="about" />" title="Link 1" class="">About us</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="<MySource_PRINT id_name="global_links" var="contact" />" title="Link 2" class="">Contact us</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="spf-input-group spf-search-box">
+                                        <span class="spf-group-element-wrapper">
+                                            <input class="uikit-text-input spf-group-element" name="search-box" id="search-box" type="text" value="" placeholder="Search" />
+                                        </span>
+                                        <button class="uikit-btn spf-group-element">
+                                            <i class="fa fa-search fa-2x" aria-hidden="true" ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </header>
+        </div>
+    </div>
+    <!-- ************* -->
+
+
+    <!-- Top Nav -->
+    <MySource_AREA id_name="drop_down_menu" design_area="menu_normal" print="yes" description="Drop down menu for top level architecture">
+    <MySource_SET name="level" value="top" />
+    <MySource_SET name="show_subs" value="always" />
+    <MySource_SET name="settings.class.normal" value="" />
+    <MySource_SET name="settings.class.current" value="active" />
+    <MySource_SET name="settings.class.hierarchy" value="active" />
+    <MySource_SET name="settings.class.has_children" value="has-children" />
+        <div class="row">
+            <div class='col-md-10 col-md-offset-1 no-padding'>
+                <nav class="spf-top-nav">
+                    <ul class="uikit-link-list uikit-link-list--inline">
+                    <MySource_ASSET>
+                        <li class="<MySource_PRINT var="settings.class" />">
+                            <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
+                            <MySource_SUB design_area="menu_normal">
+                                <MySource_SET name="show_subs" value="always" />
+                                <MySource_SET name="settings.class.normal" value="" />
+                                <MySource_SET name="settings.class.current" value="active" />
+                                <MySource_SET name="settings.class.hierarchy" value="active" />
+                                <MySource_SET name="settings.class.has_children" value="has-children" />
+                                <ul><!--  level two -->
+                                    <MySource_ASSET>
+                                        <li class="<MySource_PRINT var="settings.class" />">
+                                            <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
+                                            <MySource_SUB design_area="menu_normal">
+                                            <MySource_SET name="show_subs" value="always" />
+                                            <MySource_SET name="settings.class.normal" value="" />
+                                            <MySource_SET name="settings.class.current" value="active" />
+                                            <MySource_SET name="settings.class.hierarchy" value="active" />
+                                            <MySource_SET name="settings.class.has_children" value="has-children" />
+                                                <ul><!--  level three -->
+                                                    <MySource_ASSET>
+                                                        <li class="<MySource_PRINT var="settings.class" />">
+                                                            <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
+                                                        </li>
+                                                    </MySource_ASSET>
+                                                </ul>
+                                            </MySource_SUB>
+                                        </li>
+                                    </MySource_ASSET>
+                                </ul><!-- end level two -->
+                            </MySource_SUB>
+                        </li>
+                        </MySource_ASSET>
+                    </ul>
+                </nav>
+                <!-- start mobile nav -->
+                <nav class="spf-top-nav-mobile">
+                    <button class="showmenu uikit-btn uikit-btn--secondary uikit-btn--block">Menu &#9776</button>
+                    <ul class="uikit-link-list uikit-link-list--inline closed">
+                    <MySource_ASSET>
+                        <li class="<MySource_PRINT var="settings.class" />">
+                            <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
+                            <MySource_SUB design_area="menu_normal">
+                                <MySource_SET name="show_subs" value="always" />
+                                <MySource_SET name="settings.class.normal" value="" />
+                                <MySource_SET name="settings.class.current" value="active" />
+                                <MySource_SET name="settings.class.hierarchy" value="active" />
+                                <MySource_SET name="settings.class.has_children" value="has-children" />
+                                <ul><!--  level two -->
+                                    <MySource_ASSET>
+                                        <li class="<MySource_PRINT var="settings.class" />">
+                                            <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
+                                        </li>
+                                    </MySource_ASSET>
+                                </ul><!-- end level two -->
+                            </MySource_SUB>
+                        </li>
+                        </MySource_ASSET>
+                    </ul>
+                </nav>
+                
+                
+                
+                
+                
+                
+            </div>
+        </div>
+    </MySource_AREA>
+    <!-- ************* -->
+    
+    
+    
+
+
+
+
+    <!-- Main Section -->
+    <MySource_AREA id_name="banner_image" design_area="nest_content" />
+    
+    
+    
+    
+    <MySource_AREA id_name="breadcrumbs" design_area="asset_lineage">
+    <MySource_SET name="prefix_with_home_link" value="false" />
+    <MySource_SET name="suffix_with_current_link" value="false" />
+    <MySource_SET name="prefix_with_divider" value="false" />
+    <MySource_SET name="suffix_with_divider" value="false" />
+    <MySource_DIVIDER></MySource_DIVIDER>
+        <div class="row">
+            <div class="col-md-12 page-banner grey-banner">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="uikit-breadcrumbs" aria-label="breadcrumb">
+                        <ul class="uikit-link-list uikit-link-list--inline">
+                            <li class=""><a href="/" class="home">Home</a></li>
+                            <!-- PREVIOUS PAGE BREADCRUMB (only appears 3 levels down and below) -->
+                            <MySource_ASSET>
+                                <li class=""><a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_short_name" /></a></li>
+                            </MySource_ASSET>
+                            <!-- CURRENT PAGE BREADCRUMB -->
+                            <li><span class="active"><MySource_PRINT var="asset_short_name" /></span></li>
+                        </ul>   
+                    </div>
+                    <h1><MySource_PRINT id_name="__global__" var="asset_short_name" /></h1>
+                </div>
+            </div>
+        </div>
+    </MySource_AREA>
+    
+    <div class="row">
+    
+
+
+                <MySource_AREA id_name="sub_menu" design_area="menu_normal" print="yes">
+                    <MySource_SET name="level" value="sub" />
+                    <MySource_SET name="show_subs" value="always" />
+                    <MySource_SET name="settings.class.normal" value="" />
+                    <MySource_SET name="settings.class.current" value="is-curent is-active" />
+                    <MySource_SET name="settings.class.hierarchy" value="active" />
+                    <MySource_SET name="settings.class.has_children" value="has-children" />
+                    <MySource_SET name="unwanted_asset_types" value="folder, file" />
+
+    <div class="col-md-2 col-md-offset-1">
+        <aside class="sidebar">
+    <nav class="local-nav" aria-label="main navigation">
+      <h2 class="is-visuallyhidden">
+        Menu
+      </h2>
+      <ul>
+        <li><MySource_PRINT id_name="breadcrumbs2" print="yes"/>
+          <ul>
+            <MySource_ASSET>
+            <li><a href="<MySource_PRINT var="asset_link" />" class="<MySource_PRINT var="settings.class"/>"><MySource_PRINT var="asset_name" /></a>
+            <MySource_SUB design_area="menu_normal">
+                                    <MySource_SET name="show_subs" value="always" />
+                                    <MySource_SET name="settings.class.normal" value="" />
+                                    <MySource_SET name="settings.class.current" value="is-active is-current" />
+                                    <MySource_SET name="settings.class.hierarchy" value="active" />
+                                    <MySource_SET name="settings.class.has_children" value="has-children" />
+              <ul>
+              <MySource_ASSET>
+                <li><a href="<MySource_PRINT var="asset_link" />" class="<MySource_PRINT var="settings.class"/>"><MySource_PRINT var="asset_name" /></a>
+                </li>
+              </MySource_ASSET>
+              </ul>
+              </MySource_SUB>
+            </li>
+            </MySource_ASSET>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  
+</div>
+</MySource_AREA>
+
+
+
+        <div class="<MySource_PRINT id_name="template_options" var="middlecolumn" />">
+            
+
+                    
+
+            
+            <MySource_AREA id_name="page_body" design_area="body" />
+
+        </div>
+        
+        <MySource_AREA id_name="right_column" design_area="nest_content" />
+        
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- ************* -->
+
+
+
+    <div class="row">
+        
+        <!-- Social Footer -->
+        <footer class=" uikit-footer uikit-footer--light">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="uikit-link-list uikit-link-list--inline">
+                            <li class="">
+                                <a href="<MySource_PRINT id_name="global_links" var="feedback" />" title="Link 1" class="">Feedback</a>
+                            </li>
+                            <li class="">
+                                <a href="<MySource_PRINT id_name="global_links" var="contact" />" title="Link 2" class="">Contact us</a>
+                            </li>
+                            <li class="">
+                                <a href="<MySource_PRINT id_name="global_links" var="jobs" />" title="Link 2" class="">Jobs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 align-right">
+                        <div class="spf-social-media-icon-bar">
+                            <a href="#" title="social-media-icon.facebook.title">
+                            <i class="fa fa-2x fa-facebook-square social-media-icon-sm"></i>
+                        </a>
+                            <a href="#" title="social-media-icon.youtube.title">
+                            <i class="fa fa-2x fa-youtube-square social-media-icon-sm"></i>
+                        </a>
+                            <a href="#" title="social-media-icon.twitter.title">
+                            <i class="fa fa-2x fa-twitter-square social-media-icon-sm"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </footer>
+
+        <!-- Global Footer -->
+        <footer class="uikit-grid uikit-footer spf-footer-global">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-5">
+                        <ul class="uikit-link-list uikit-link-list--inline uikit-link-list--inverted">
+                            <li>
+                                <a href="<MySource_PRINT id_name="global_links" var="accessibility" />" title="Link 1" class="">Accessibility</a>
+                            </li>
+                            <li>
+                                <a href="<MySource_PRINT id_name="global_links" var="privacy" />" title="Link 2" class="">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="<MySource_PRINT id_name="global_links" var="disclaimer" />" title="Link 2" class="">Disclaimer</a>
+                            </li>
+                            <li>
+                                <a href="<MySource_PRINT id_name="global_links" var="copyright" />" title="Link 2" class="">Copyright</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <MySource_AREA id_name="footer_logos" design_area="nest_content">
+                        <MySource_SET name="type_codes"  value="page" />
+                    </MySource_AREA>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!-- ************* -->
+    </div>
+
+
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="./?a=1124467"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script>window.jQuery.ui || document.write('<script src="./?a=1124466"><\/script>')</script>
+    <script type="text/javascript" src="./?a=1124468"></script>
+    <script type="text/javascript" src="https://www.search.act.gov.au/s/resources-global/js/jquery/jquery.tmpl.min.js"></script>
+    <script type="text/javascript" src="https://www.search.act.gov.au/s/resources-global/js/jquery.funnelback-completion.js"></script>
+    <script type="text/javascript" src="./?a=1159369"></script>
+    <script type="text/javascript" src="./?a=1159370"></script>
+    <script type="text/javascript" src="./?a=1159372"></script>
+    <script type="text/javascript" src="./?a=1159373"></script>
+    <script type="text/javascript" src="./?a=1159374"></script>
+    <MySource_AREA id_name="additional_javascript" design_area="nest_content" />
+
+
+   <script type="text/javascript">
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '<MySource_PRINT id_name="global_links" var="ga_code" />', 'auto');
+  ga('send', 'pageview');
+
+
+if (typeof jQuery != 'undefined') {
+    var filetypes = /\.(zip|exe|dmg|pdf|doc.*|xls.*|ppt.*|mp3|txt|rar|wma|mov|avi|wmv|flv|wav|jpg|jpeg|gif|png)$/i;
+    var baseHref = '';
+    if (jQuery('base').attr('href') != undefined) baseHref = jQuery('base').attr('href');
+    var hrefRedirect = '';
+
+    jQuery('body').on('click', 'a', function(event) {
+        var el = jQuery(this);
+        var track = true;
+        var href = (typeof(el.attr('href')) != 'undefined' ) ? el.attr('href') : '';
+        var isThisDomain = href.match(document.domain.split('.').reverse()[1] + '.' + document.domain.split('.').reverse()[0]);
+        if (!href.match(/^javascript:/i)) {
+            var elPv = [];
+            var elEv = []; elEv.value=0, elEv.non_i=false;
+            if (href.match(/^mailto\:/i)) {
+                elEv.category = 'email';
+                elEv.action = 'click';
+                elEv.label = href.replace(/^mailto\:/i, '');
+                elEv.loc = href;
+            }
+            else if (href.match(filetypes)) {
+                var extension = (/[.]/.exec(href)) ? /[^.]+$/.exec(href) : undefined;
+                elEv.category = 'download';
+                elEv.action = 'click-' + extension[0];
+                elEv.label = href.replace(/ /g,'-');
+                elEv.loc = baseHref + href;
+                elPv.loc = href.replace(/^.*\/\/[^\/]+/, '');
+            }
+            else if (href.match(/^https?\:/i) && !isThisDomain) {
+                elEv.category = 'external';
+                elEv.action = 'click';
+                elEv.label = href.replace(/^https?\:\/\//i, '');
+                elEv.non_i = true;
+                elEv.loc = href;
+            }
+            else if (href.match(/^tel\:/i)) {
+                elEv.category = 'telephone';
+                elEv.action = 'click';
+                elEv.label = href.replace(/^tel\:/i, '');
+                elEv.loc = href;
+            }
+            else track = false;
+
+            if (track) {
+                var ret = true;
+
+                if((elEv.category == 'external' || elEv.category == 'download') && (el.attr('target') == undefined || el.attr('target').toLowerCase() != '_blank') ) {
+                    hrefRedirect = elEv.loc;
+
+                    if (elEv.category == 'download') {
+                        relativeLabel = elEv.label.replace(/^.*\/\/[^\/]+/, '');
+                        relativeLoc = elPv.loc.replace(/^.*\/\/[^\/]+/, '');
+                        ga('send','event', elEv.category.toLowerCase(),elEv.action.toLowerCase(),relativeLabel.toLowerCase(),elEv.value,{
+                            'nonInteraction': elEv.non_i
+                        });
+                        ga('send','pageview', relativeLoc,{
+                            'nonInteraction': elEv.non_i,
+                           'hitCallback': gaHitCallbackHandler
+                        });
+                    }
+                    else {
+                        ga('send','event', elEv.category.toLowerCase(),elEv.action.toLowerCase(),elEv.label.toLowerCase(),elEv.value,{
+                            'nonInteraction': elEv.non_i,
+                            'hitCallback': gaHitCallbackHandler
+                        });
+                    }
+
+                    ret = false;
+                }
+                else {
+                    ga('send','event', elEv.category.toLowerCase(),elEv.action.toLowerCase(),elEv.label.toLowerCase(),elEv.value,{
+                        'nonInteraction': elEv.non_i
+                    });
+                }
+
+                return ret;
+            }
+        }
+    });
+
+
+
+    gaHitCallbackHandler = function() {
+        window.location.href = hrefRedirect;
+    }
+}
+
+
+</script>
+
+
+</body>
+
+</html>
