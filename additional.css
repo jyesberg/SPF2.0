@@ -500,6 +500,7 @@ form.search-quicklinks-search .query {
 
 /* seriously, is a horizontal scroll bar better than adding a class to get rid of padding? */
 .uikit-grid .no-padding {padding:0;}
+.uikit-grid .no-padding-top {padding-top:0;}
 .uikit-grid .row {margin:0;}
 .uikit-grid .no-margin {margin:0;}
 
