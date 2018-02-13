@@ -11,7 +11,7 @@
     <MySource_SET name="suffix_with_divider" value="false" />
     <MySource_DIVIDER></MySource_DIVIDER>
     <MySource_ASSET>
-        <a href="<MySource_PRINT var="asset_link" />" class="is-active"><MySource_PRINT var="asset_short_name" /></a>
+        <a href="<MySource_PRINT var="asset_link" />" class="is-active no-padding-top"><MySource_PRINT var="asset_short_name" /></a>
     </MySource_ASSET>
 </MySource_AREA>
 
@@ -116,6 +116,34 @@
     <MySource_SET name="settings.class.has_children" value="has-children" />
         <div class="row">
             <div class='col-md-10 col-md-offset-1 no-padding'>
+                
+                <!-- start mobile nav -->
+                <nav class="spf-top-nav-mobile">
+                    <button class="showmenu uikit-btn uikit-btn--secondary uikit-btn--block">Menu &#9776</button>
+                    <ul class="uikit-link-list uikit-link-list--inline closed">
+                    <MySource_ASSET>
+                        <li class="<MySource_PRINT var="settings.class" />">
+                            <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
+                            <MySource_SUB design_area="menu_normal">
+                                <MySource_SET name="show_subs" value="always" />
+                                <MySource_SET name="settings.class.normal" value="" />
+                                <MySource_SET name="settings.class.current" value="active" />
+                                <MySource_SET name="settings.class.hierarchy" value="active" />
+                                <MySource_SET name="settings.class.has_children" value="has-children" />
+                                <ul><!--  level two -->
+                                    <MySource_ASSET>
+                                        <li class="<MySource_PRINT var="settings.class" />">
+                                            <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
+                                        </li>
+                                    </MySource_ASSET>
+                                </ul><!-- end level two -->
+                            </MySource_SUB>
+                        </li>
+                        </MySource_ASSET>
+                    </ul>
+                </nav>
+                <!-- end mobile nav -->
+                
                 <nav class="spf-top-nav">
                     <ul class="uikit-link-list uikit-link-list--inline">
                     <MySource_ASSET>
@@ -153,31 +181,6 @@
                         </MySource_ASSET>
                     </ul>
                 </nav>
-                <!-- start mobile nav -->
-                <nav class="spf-top-nav-mobile">
-                    <button class="showmenu uikit-btn uikit-btn--secondary uikit-btn--block">Menu &#9776</button>
-                    <ul class="uikit-link-list uikit-link-list--inline closed">
-                    <MySource_ASSET>
-                        <li class="<MySource_PRINT var="settings.class" />">
-                            <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
-                            <MySource_SUB design_area="menu_normal">
-                                <MySource_SET name="show_subs" value="always" />
-                                <MySource_SET name="settings.class.normal" value="" />
-                                <MySource_SET name="settings.class.current" value="active" />
-                                <MySource_SET name="settings.class.hierarchy" value="active" />
-                                <MySource_SET name="settings.class.has_children" value="has-children" />
-                                <ul><!--  level two -->
-                                    <MySource_ASSET>
-                                        <li class="<MySource_PRINT var="settings.class" />">
-                                            <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
-                                        </li>
-                                    </MySource_ASSET>
-                                </ul><!-- end level two -->
-                            </MySource_SUB>
-                        </li>
-                        </MySource_ASSET>
-                    </ul>
-                </nav>
                 
                 
                 
@@ -201,7 +204,7 @@
     
     
     
-    <MySource_AREA id_name="breadcrumbs" design_area="asset_lineage">
+    <MySource_AREA id_name="breadcrumbs_banner" design_area="asset_lineage" print="no">
     <MySource_SET name="prefix_with_home_link" value="false" />
     <MySource_SET name="suffix_with_current_link" value="false" />
     <MySource_SET name="prefix_with_divider" value="false" />
@@ -226,6 +229,7 @@
             </div>
         </div>
     </MySource_AREA>
+    <hr class="col-md-12">
     
     <div class="row">
     
@@ -240,7 +244,7 @@
                     <MySource_SET name="settings.class.has_children" value="has-children" />
                     <MySource_SET name="unwanted_asset_types" value="folder, file" />
 
-    <div class="col-md-2 col-md-offset-1">
+    <div class="col-md-2 col-md-offset-1 spf-page-content--left">
         <aside class="sidebar">
     <nav class="local-nav" aria-label="main navigation">
       <h2 class="is-visuallyhidden">
@@ -282,7 +286,27 @@
 
                     
 
-            
+                <MySource_AREA id_name="breadcrumbs_body" design_area="asset_lineage" print="no">
+                <MySource_SET name="prefix_with_home_link" value="false" />
+                <MySource_SET name="suffix_with_current_link" value="false" />
+                <MySource_SET name="prefix_with_divider" value="false" />
+                <MySource_SET name="suffix_with_divider" value="false" />
+                <MySource_DIVIDER></MySource_DIVIDER>
+                    <div class="row">
+                        <div class="uikit-breadcrumbs" aria-label="breadcrumb">
+                            <ul class="uikit-link-list uikit-link-list--inline">
+                                <li class=""><a href="/" class="home">Home</a></li>
+                                <!-- PREVIOUS PAGE BREADCRUMB (only appears 3 levels down and below) -->
+                                <MySource_ASSET>
+                                    <li class=""><a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_short_name" /></a></li>
+                                </MySource_ASSET>
+                                <!-- CURRENT PAGE BREADCRUMB -->
+                                <li><span class="active"><MySource_PRINT var="asset_short_name" /></span></li>
+                            </ul>   
+                        </div>
+                        <h1><MySource_PRINT id_name="__global__" var="asset_short_name" /></h1>
+                    </div>
+                </MySource_AREA>
             <MySource_AREA id_name="page_body" design_area="body" />
 
         </div>
