@@ -906,3 +906,6 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
   /* End Bringing across RW default form styles on 2018-Feb-06 */
+  
+  /* Removing table background from .spf-body .spf-table */
+  .spf-body .spf-table {background:transparent;}
