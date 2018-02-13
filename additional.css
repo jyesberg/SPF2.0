@@ -736,11 +736,20 @@ ul > li > ul {
      background: #313131;
  }
  
- .page-banner.blue-banner span, .page-banner.blue-banner h1, .uikit-body .page-banner.blue-banner a, .page-banner.grey-banner span, .page-banner.grey-banner h1, .uikit-body .page-banner.grey-banner a {
+ .page-banner.purple-banner {
+    background: #3f2583; /* Old browsers */
+    background: -moz-linear-gradient(left, #3f2583 0%, #a33790 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #3f2583 0%,#a33790 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #3f2583 0%,#a33790 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f2583', endColorstr='#a33790',GradientType=1 ); /* IE6-9 */
+}
+
+ 
+ .page-banner.blue-banner span, .page-banner.blue-banner h1, .uikit-body .page-banner.blue-banner a, .page-banner.grey-banner span, .page-banner.grey-banner h1, .uikit-body .page-banner.grey-banner a, .page-banner.purple-banner span, .page-banner.purple-banner h1, .uikit-body .page-banner.purple-banner a {
      color:#fff !important;
  }
  
- .page-banner.blue-banner a, .page-banner.grey-banner a {
+ .page-banner.blue-banner a, .page-banner.grey-banner a, .page-banner.purple-banner a {
      border-bottom: solid 1px #fff;
  }
  
