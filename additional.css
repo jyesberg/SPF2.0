@@ -909,3 +909,7 @@ input[type=button], input[type=submit], input[type=reset] {
   
   /* Removing table background from .spf-body .spf-table */
   .spf-body .spf-table {background:transparent;}
+  
+  /* fixing height issue on article boxes with img headers */
+  .spf-article-box .spf-image-outer {height:176px;}
+
