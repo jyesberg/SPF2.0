@@ -9,15 +9,15 @@
 }
 
 /* temp drop down nav styles */
-.spf-top-nav ul li ul {display:none; max-width:170px; text-align:center;}
+.spf-top-nav ul li ul {display:none; width:179px; text-align:center;}
 .spf-top-nav ul li:hover>ul {display:block;}
 .spf-top-nav ul li ul {margin:0; padding:0; position:absolute; z-index:9; background:#f0f3f5}
 .spf-top-nav ul li ul li {list-style-type:none; display:block; position:relative; z-index:9; margin:0;}
 .spf-top-nav ul li ul li a {padding: 1em .8em;}
 .spf-top-nav ul.uikit-link-list li ul li:hover {background-color: #edd7e9; border-bottom: solid 4px #3f2583;}
 .spf-top-nav ul.uikit-link-list li ul li a:hover {background-color: transparent; border-bottom: 4px solid transparent;}
-.spf-top-nav ul li ul li ul {left: 170px;top: 0;}
-.spf-top-nav ul li ul li ul li a {box-sizing: border-box; width: 170px;}
+.spf-top-nav ul li ul li ul {left: 179px;top: 0;}
+.spf-top-nav ul li ul li ul li a {box-sizing: border-box; width: 179px;}
 
 /* top menu mobile toggle style */
 
@@ -906,10 +906,12 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
   /* End Bringing across RW default form styles on 2018-Feb-06 */
-  
-  /* Removing table background from .spf-body .spf-table */
-  .spf-body .spf-table {background:transparent;}
-  
-  /* fixing height issue on article boxes with img headers */
-  .spf-article-box .spf-image-outer {height:176px;}
 
+  
+  /* setting height on .spf-article-box image wrapper wrapper as it defaults to the 420px from banner */
+  .spf-article-box .spf-image-outer {height:176px;}
+  
+    /* giving article boxes some more breathing space at lower res for col-md - need to find a cleaner solution for this*/
+@media (max-width: 991px) {
+.spf-body.uikit-grid .col-md-1 .spf-article-box, .spf-body.uikit-grid .col-md-10 .spf-article-box, .spf-body.uikit-grid .col-md-11 .spf-article-box, .spf-body.uikit-grid .col-md-12 .spf-article-box, .spf-body.uikit-grid .col-md-2 .spf-article-box, .spf-body.uikit-grid .col-md-3 .spf-article-box, .spf-body.uikit-grid .col-md-4 .spf-article-box, .spf-body.uikit-grid .col-md-5 .spf-article-box, .spf-body.uikit-grid .col-md-6 .spf-article-box, .spf-body.uikit-grid .col-md-7 .spf-article-box, .spf-body.uikit-grid .col-md-8 .spf-article-box, .spf-body.uikit-grid .col-md-9 .spf-article-box, .spf-body.uikit-grid .col-md-1 .spf-article-card, .spf-body.uikit-grid .col-md-10 .spf-article-card, .spf-body.uikit-grid .col-md-11 .spf-article-card, .spf-body.uikit-grid .col-md-12 .spf-article-card, .spf-body.uikit-grid .col-md-2 .spf-article-card, .spf-body.uikit-grid .col-md-3 .spf-article-card, .spf-body.uikit-grid .col-md-4 .spf-article-card, .spf-body.uikit-grid .col-md-5 .spf-article-card, .spf-body.uikit-grid .col-md-6 .spf-article-card, .spf-body.uikit-grid .col-md-7 .spf-article-card, .spf-body.uikit-grid .col-md-8 .spf-article-card, .spf-body.uikit-grid .col-md-9 .spf-article-card {margin-top: 12px;}
+}
