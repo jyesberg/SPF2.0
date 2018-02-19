@@ -32,7 +32,7 @@
 .spf-top-nav ul.uikit-link-list li ul li ul {left: 179px;top: 0;}
 .spf-top-nav ul.uikit-link-list li ul li ul li a {box-sizing: border-box; width: 179px;}
 .spf-top-nav ul.uikit-link-list>li ul li a {border-bottom:solid 1px transparent;}
-.spf-top-nav li.has-children:after {
+.spf-top-nav ul li li.has-children:after {
     content: '\f0da';
     font-family: FontAwesome;
     font-weight: normal;
