@@ -32,6 +32,20 @@
 .spf-top-nav ul.uikit-link-list li ul li ul {left: 179px;top: 0;}
 .spf-top-nav ul.uikit-link-list li ul li ul li a {box-sizing: border-box; width: 179px;}
 .spf-top-nav ul.uikit-link-list>li ul li a {border-bottom:solid 1px transparent;}
+.spf-top-nav li.has-children:after {
+    content: '\f0da';
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0px 0px 0px 10px;
+    text-decoration: none;
+    float: right;
+    font-size: 1.2rem;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 5%;
+    top:20%;
+}
 /* top menu mobile toggle style */
 
 .spf-top-nav-mobile {display:none;}
@@ -77,7 +91,7 @@ nav.spf-top-nav-mobile ul li li li>a {
     background: #fff;
 }
 
-.spf-top-nav-mobile>ul>li.has-children>a:after {
+.spf-top-nav-mobile>ul>li.has-children>a:after, .spf-top-nav-mobile ul li ul>li.has-children>a:after {
     content: '\f0da';
     font-family: FontAwesome;
     font-weight: normal;
