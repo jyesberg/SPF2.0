@@ -177,7 +177,7 @@
                                             <MySource_SET name="settings.class.normal" value="" />
                                             <MySource_SET name="settings.class.current" value="active" />
                                             <MySource_SET name="settings.class.hierarchy" value="active" />
-                                            <MySource_SET name="settings.class.has_children" value=" />
+                                            <MySource_SET name="settings.class.has_children" value="" />
                                                 <ul><!--  level three -->
                                                     <MySource_ASSET>
                                                         <li class="<MySource_PRINT var="settings.class" />">
