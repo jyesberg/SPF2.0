@@ -9,7 +9,9 @@
 }
 
 /* temp drop down nav styles */
-.spf-top-nav ul.uikit-link-list li ul {display:none; width:179px; text-align:center;}
+.spf-top-nav ul.uikit-link-list>li {margin:0;}
+.spf-top-nav ul.uikit-link-list>li a {padding:1.6em 1.2em;}
+.spf-top-nav ul.uikit-link-list li ul {display:none; text-align:center;}
 .spf-top-nav ul.uikit-link-list li:hover>ul {display:block;}
 .spf-top-nav ul.uikit-link-list li ul {margin:0; padding:0; position:absolute; z-index:9; background:#f0f3f5}
 .spf-top-nav ul.uikit-link-list li ul li {
@@ -31,8 +33,8 @@
 .spf-top-nav ul.uikit-link-list li ul li a:hover {background-color: transparent; border-bottom: 1px solid transparent;}
 .spf-top-nav ul.uikit-link-list li ul li ul {left: 179px;top: 0;}
 .spf-top-nav ul.uikit-link-list li ul li ul li a {box-sizing: border-box; width: 179px;}
-.spf-top-nav ul.uikit-link-list>li ul li a {border-bottom:solid 1px transparent;}
-.spf-top-nav ul li li.has-children:after {
+.spf-top-nav ul.uikit-link-list>li ul li a {border-bottom:solid 1px transparent; box-sizing:border-box; width:179px;}
+.spf-top-nav li ul li.has-children:after {
     content: '\f0da';
     font-family: FontAwesome;
     font-weight: normal;
