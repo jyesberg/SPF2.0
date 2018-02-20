@@ -197,13 +197,7 @@
             </div>
         </div>
     </MySource_AREA>
-    <!-- ************* -->
-    
-    
-    
-
-
-
+    <!-- End Top Nav -->
 
     <!-- Main Section -->
     <MySource_AREA id_name="banner_image" design_area="nest_content" />
@@ -244,7 +238,7 @@
 
         <MySource_AREA id_name="sub_menu" design_area="menu_normal" print="yes">
             <MySource_SET name="level" value="sub" />
-            <MySource_SET name="show_subs" value="always" />
+            <MySource_SET name="show_subs" value="on_current" />
             <MySource_SET name="settings.class.normal" value="" />
             <MySource_SET name="settings.class.current" value="is-curent is-active" />
             <MySource_SET name="settings.class.hierarchy" value="active" />
@@ -263,7 +257,7 @@
                                     <MySource_ASSET>
                                         <li><a href="<MySource_PRINT var="asset_link" />" class="<MySource_PRINT var="settings.class"/>"><MySource_PRINT var="asset_name" /></a>
                                             <MySource_SUB design_area="menu_normal">
-                                                <MySource_SET name="show_subs" value="always" />
+                                                <MySource_SET name="show_subs" value="on_current" />
                                                 <MySource_SET name="settings.class.normal" value="" />
                                                 <MySource_SET name="settings.class.current" value="is-active is-current" />
                                                 <MySource_SET name="settings.class.hierarchy" value="active" />
@@ -272,7 +266,7 @@
                                                     <MySource_ASSET>
                                                         <li><a href="<MySource_PRINT var="asset_link" />" class="<MySource_PRINT var="settings.class"/>"><MySource_PRINT var="asset_name" /></a>
                                                             <MySource_SUB design_area="menu_normal">
-                                                                <MySource_SET name="show_subs" value="always" />
+                                                                <MySource_SET name="show_subs" value="on_current" />
                                                                 <MySource_SET name="settings.class.normal" value="" />
                                                                 <MySource_SET name="settings.class.current" value="is-active is-current" />
                                                                 <MySource_SET name="settings.class.hierarchy" value="active" />
