@@ -47,7 +47,7 @@
     <MySource_AREA id_name="custom" design_area="linked_css" />
 </head>
 
-<body class='spf-body uikit-body uikit-grid'>
+<body class='spf-body uikit-body uikit-grid matrix'>
 
     <!-- Header -->
     <div class="row">
