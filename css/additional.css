@@ -942,3 +942,28 @@ input[type=button], input[type=submit], input[type=reset] {
 @media (max-width: 991px) {
 .spf-body.uikit-grid .col-md-1 .spf-article-box, .spf-body.uikit-grid .col-md-10 .spf-article-box, .spf-body.uikit-grid .col-md-11 .spf-article-box, .spf-body.uikit-grid .col-md-12 .spf-article-box, .spf-body.uikit-grid .col-md-2 .spf-article-box, .spf-body.uikit-grid .col-md-3 .spf-article-box, .spf-body.uikit-grid .col-md-4 .spf-article-box, .spf-body.uikit-grid .col-md-5 .spf-article-box, .spf-body.uikit-grid .col-md-6 .spf-article-box, .spf-body.uikit-grid .col-md-7 .spf-article-box, .spf-body.uikit-grid .col-md-8 .spf-article-box, .spf-body.uikit-grid .col-md-9 .spf-article-box, .spf-body.uikit-grid .col-md-1 .spf-article-card, .spf-body.uikit-grid .col-md-10 .spf-article-card, .spf-body.uikit-grid .col-md-11 .spf-article-card, .spf-body.uikit-grid .col-md-12 .spf-article-card, .spf-body.uikit-grid .col-md-2 .spf-article-card, .spf-body.uikit-grid .col-md-3 .spf-article-card, .spf-body.uikit-grid .col-md-4 .spf-article-card, .spf-body.uikit-grid .col-md-5 .spf-article-card, .spf-body.uikit-grid .col-md-6 .spf-article-card, .spf-body.uikit-grid .col-md-7 .spf-article-card, .spf-body.uikit-grid .col-md-8 .spf-article-card, .spf-body.uikit-grid .col-md-9 .spf-article-card {margin-top: 12px;}
 }
+
+
+
+
+/* Matrix Specific Styles */
+    /* defaulting select elements along with the wrapping div for drop down etc in Matrix */
+    @media print{
+        select{border-color:#000!important}
+        .matrix .sq-form-question-select>div.sq-form-question-answer:after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E   %3Cpath fill='%23000' d='M64 128l64-64-16-16-64 64'/%3E   %3Cpath fill='%23000' d='M64 128l16-16-64-64L0 64'/%3E  %3C/svg%3E")!important}
+    }
+    
+    .matrix .sq-form-question-select>div.sq-form-question-answer{position:relative;vertical-align:middle;display:inline-block;background-color:#fff;margin-bottom:.8em;box-sizing:border-box}
+    .matrix .sq-form-question-select>div.sq-form-question-answer:after{content:' ';position:absolute;top:50%;right:.8em;width:.8em;height:.8em;margin-top:-.4em;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E   %3Cpath fill='%233F2583' d='M64 128l64-64-16-16-64 64'/%3E   %3Cpath fill='%233F2583' d='M64 128l16-16-64-64L0 64'/%3E  %3C/svg%3E");background-repeat:no-repeat;z-index:0}
+    .ie8 .matrix .sq-form-question-select>div.sq-form-question-answer:after,.ie9 .matrix .sq-form-question-select>div.sq-form-question-answer:after{display:none}
+    .matrix .sq-form-question-select>div.sq-form-question-answer.uikit-select-block{display:block}
+    .matrix .sq-form-question-select>div.sq-form-question-answer.uikit-select-block .matrix .sq-form-question-select>div.sq-form-question-answer select{width:100%}
+    .matrix .sq-form-question-select>div.sq-form-question-answer select{position:relative;z-index:1;background:0 0;-webkit-appearance:none;-moz-appearance:none;appearance:none;font-family:"Source Sans Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans",sans-serif;color:#313131;font-size:16px;text-indent:.01px;text-overflow:'';border:none;padding:.4em 2.4em .4em .4em;border:2px solid #d1d1d1;border-radius:3px;box-sizing:border-box}
+    .matrix .sq-form-question-select>div.sq-form-question-answer select:focus{outline:1px solid #313131;outline-offset:1px}
+    .matrix .sq-form-question-select>div.sq-form-question-answer select:disabled{cursor:not-allowed;background:rgba(168,170,172,.5);color:#5a5a5a}
+    .matrix .sq-form-question-select>div.sq-form-question-answer select::-ms-expand{display:none}
+    .ie8 .matrix .sq-form-question-select>div.sq-form-question-answer select,.ie9 .matrix .sq-form-question-select>div.sq-form-question-answer select{padding-right:.4em}
+    html>body .matrix .sq-form-question-select>div.sq-form-question-answer select,x:-moz-any-link,x:default{padding-right:.4em}
+    @supports (-moz-osx-font-smoothing:auto){html body .matrix .sq-form-question-select>div.sq-form-question-answer select{padding-right:2.4em}}
+    /* end matrix select styles */
+/* End Matrix Specific Styles */
