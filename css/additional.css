@@ -531,11 +531,6 @@ form.search-quicklinks-search .query {
 .uikit-grid .row {margin:0;}
 .uikit-grid .no-margin {margin:0;}
 
-/* header text near logo is way too cramped */
-.spf-body .uikit-header .uikit-header__logo-wrapper .uikit-header__logo .uikit-header__logo-text {width:440px;}
-
-
-
 /* side nav styling 20171212 */
 
 .visuallyhidden, .is-visuallyhidden {
