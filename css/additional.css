@@ -525,11 +525,14 @@ form.search-quicklinks-search .query {
     display: none;
 }
 
-/* seriously, is a horizontal scroll bar better than adding a class to get rid of padding? */
+/* removes the horizontal scroll bar issue */
 .uikit-grid .no-padding {padding:0;}
 .uikit-grid .no-padding-top {padding-top:0;}
 .uikit-grid .row {margin:0;}
 .uikit-grid .no-margin {margin:0;}
+
+/* set width of header text to auto so it doesn't derp out  */
+.spf-body .uikit-header .uikit-header__logo-wrapper .uikit-header__logo .uikit-header__logo-text {width:auto;}
 
 /* side nav styling 20171212 */
 
