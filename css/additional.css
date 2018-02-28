@@ -539,6 +539,7 @@ form.search-quicklinks-search .query {
 
 @media only screen and (max-width:502px) {
     .spf-body .uikit-header .uikit-header__logo-wrapper .uikit-header__logo:last-child {max-width:100%;}
+    .spf-body .uikit-header .uikit-header__logo-wrapper .uikit-header__logo {border:none;}
 }
 
 /* side nav styling 20171212 */
