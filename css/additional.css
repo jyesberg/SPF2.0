@@ -531,8 +531,15 @@ form.search-quicklinks-search .query {
 .uikit-grid .row {margin:0;}
 .uikit-grid .no-margin {margin:0;}
 
+/* set width of header text wrapping li so it stacks inline */
+.spf-body .uikit-header .uikit-header__logo-wrapper .uikit-header__logo:last-child {max-width:60%;}
+
 /* set width of header text to auto so it doesn't derp out  */
 .spf-body .uikit-header .uikit-header__logo-wrapper .uikit-header__logo .uikit-header__logo-text {width:auto;}
+
+@media only screen and (max-width:502px) {
+    .spf-body .uikit-header .uikit-header__logo-wrapper .uikit-header__logo:last-child {max-width:100%;}
+}
 
 /* side nav styling 20171212 */
 
