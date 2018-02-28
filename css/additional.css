@@ -899,8 +899,8 @@ input[type="checkbox"]:before, input[type="checkbox"]:after {
     z-index: 1;
 }
 
-
-select {
+/* Can't have this one as a default */
+.matrix .sq-form-question-select>div.sq-form-question-answer select {
     padding-right: .4em;
     position: relative;
     z-index: 1;
