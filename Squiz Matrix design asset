@@ -44,7 +44,7 @@
     <link rel="stylesheet" type="text/css" href="./?a=1115253">
     <link rel="stylesheet" type="text/css" href="./?a=1115260">
     <link rel="stylesheet" type="text/css" href="./?a=1124492">
-    <MySource_AREA id_name="custom" design_area="linked_css" />
+    <MySource_AREA id_name="nested_css_references" design_area="nest_content" />
 </head>
 
 <body class='spf-body uikit-body uikit-grid matrix'>
