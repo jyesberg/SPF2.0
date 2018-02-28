@@ -830,6 +830,12 @@ ul > li > ul {
   .uikit-footer-logo a {border:none;}
 /* End Styles added 2018-Feb-06 */
 
+/* Styles added 2018-Feb-28 */
+/* changing margins to make nav look nicer */
+.top-nav-hr {margin-top:0;}
+.page-banner {margin-bottom:8px;}
+/* End Styles added 2018-Feb-28 */
+
 /* Bringing across RW default form styles on 2018-Feb-06 */
 label {
     margin: 0em 0 0 0;
