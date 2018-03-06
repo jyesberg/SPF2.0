@@ -211,14 +211,14 @@
     <MySource_SET name="suffix_with_divider" value="false" />
     <MySource_DIVIDER></MySource_DIVIDER>
         <div class="row">
-            <div class="col-md-12 page-banner grey-banner">
-                <div class="col-md-6 col-md-offset-3">
+            <div class="spf-text-banner spf-text-banner--gradient-navy-violet">
+                <div class="col-md-6 col-md-offset-1">
                     <div class="uikit-breadcrumbs" aria-label="breadcrumb">
                         <ul class="uikit-link-list uikit-link-list--inline">
                             <li class=""><a href="/" class="home">Home</a></li>
                             <!-- PREVIOUS PAGE BREADCRUMB (only appears 3 levels down and below) -->
                             <MySource_ASSET>
-                                <li class=""><a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_short_name" /></a></li>
+                                <li class=""><a href="<MySource_PRINT var="asset_link" />?SQ_DESIGN_NAME=spf2&SQ_ACTION=set_design_name"><MySource_PRINT var="asset_short_name" /></a></li>
                             </MySource_ASSET>
                             <!-- CURRENT PAGE BREADCRUMB -->
                             <li><span class="active"><MySource_PRINT var="asset_short_name" /></span></li>
