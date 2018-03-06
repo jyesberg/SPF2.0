@@ -1,3 +1,8 @@
+/* Changing header logo width to auto to prevent skewing */
+.spf-body .uikit-header .uikit-header__logo-wrapper .uikit-header__logo .uikit-header__logo-image, .spf-body .uikit-header .uikit-header__logo-wrapper .uikit-header__logo .uikit-header__logo-text { width:auto;}
+/* End header logo width change */
+
+
 /* Fixed Search Box overlay issue */
 .spf-body .spf-input-group>.spf-group-element-wrapper input[type=text] {
     display: block;
@@ -754,39 +759,6 @@ ul > li > ul {
 
 
 /* Styles added 2018-Feb-05 */
- .page-banner {
-    padding:20px 20px 20px 110px;
- }
- 
- .page-banner.blue-banner {
-    background: #2c4fac; /* Old browsers */
-    background: -moz-linear-gradient(left, #2c4fac 0%, #1d92e2 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #2c4fac 0%,#1d92e2 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #2c4fac 0%,#1d92e2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c4fac', endColorstr='#1d92e2',GradientType=1 ); /* IE6-9 */
- }
- 
- .page-banner.grey-banner {
-     background: #313131;
- }
- 
- .page-banner.purple-banner {
-    background: #3f2583; /* Old browsers */
-    background: -moz-linear-gradient(left, #3f2583 0%, #a33790 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #3f2583 0%,#a33790 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #3f2583 0%,#a33790 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f2583', endColorstr='#a33790',GradientType=1 ); /* IE6-9 */
-}
-
- 
- .page-banner.blue-banner span, .page-banner.blue-banner h1, .uikit-body .page-banner.blue-banner a, .page-banner.grey-banner span, .page-banner.grey-banner h1, .uikit-body .page-banner.grey-banner a, .page-banner.purple-banner span, .page-banner.purple-banner h1, .uikit-body .page-banner.purple-banner a {
-     color:#fff !important;
- }
- 
- .page-banner.blue-banner a, .page-banner.grey-banner a, .page-banner.purple-banner a {
-     border-bottom: solid 1px #fff;
- }
- 
  aside.sidebar a.has-children:after {
     content: '\f0da';
     font-family: FontAwesome;
@@ -956,13 +928,205 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 
+/* Banners from RW - 06 Mar 18 */
+/*  Start of gradient variations - RW 20171211*/
+
+.spf-body .spf-text-banner.spf-text-banner--gradient-tc {
+    background: linear-gradient(to right, #0066fb 0%, #4e2984 50%, #da1931 100%);
+    color: #f0f3f5;
+}
+
+.spf-body .spf-text-banner.spf-text-banner--gradient-navy-violet {
+    background: linear-gradient(to right,#0078ca,#482d8d);
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--gradient-navy-violet a, .spf-body .spf-text-banner.spf-text-banner--gradient-navy-violet span {
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--gradient-navy-indigo {
+    background: linear-gradient(to right,#0078ca,#333092);
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--gradient-navy-indigo a, .spf-body .spf-text-banner.spf-text-banner--gradient-navy-indigo span {
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--gradient-red-violet {
+    background: linear-gradient(to right,#d20032,#482d8d);
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--gradient-red-violet a, .spf-body .spf-text-banner.spf-text-banner--gradient-red-violet span {
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--gradient-orange-red {
+    background: linear-gradient(to right,#e74300,#d20032);
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--gradient-orange-red a, .spf-body .spf-text-banner.spf-text-banner--gradient-orange-red span {
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--gradient-red-pink {
+    background: linear-gradient(to right,#d20032,#ab4399);
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--gradient-red-pink a, .spf-body .spf-text-banner.spf-text-banner--gradient-red-pink span {
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--gradient-aqua-green {
+    background: linear-gradient(to right,#0c7f89,#6a9612);
+    color: #f0f3f5;
+}
+
+.spf-body .spf-text-banner.spf-text-banner--gradient-aqua-green a, .spf-body .spf-text-banner.spf-text-banner--gradient-aqua-green span {
+    color: #f0f3f5;
+}
+
+.spf-body .spf-text-banner.spf-text-banner--gradient-aqua-indigo {
+    background: linear-gradient(to right,#0c7f89,#333092);
+    color: #f0f3f5;
+}
+
+.spf-body .spf-text-banner.spf-text-banner--gradient-aqua-indigo a, .spf-body .spf-text-banner.spf-text-banner--gradient-aqua-indigo span {
+    color: #f0f3f5;
+}
+
+.spf-body .spf-text-banner.spf-text-banner--gradient-green-yellow {
+    background: linear-gradient(to right,#6a9612,#fcd502);
+    color: #f0f3f5;
+}
+
+.spf-body .spf-text-banner.spf-text-banner--gradient-green-yellow a, .spf-body .spf-text-banner.spf-text-banner--gradient-green-yellow span {
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--gradient-violet-indigo {
+    background: linear-gradient(to right, #3f2583,#a33790);
+    color: #f0f3f5;
+}
+
+.spf-body .spf-text-banner.spf-text-banner--gradient-violet-indigo a, .spf-body .spf-text-banner.spf-text-banner--gradient-violet-indigo span {
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--gradient-blue- {
+    background: linear-gradient(to right, #2c4fac 0%,#1d92e2 100%);
+ }
+.spf-body .spf-text-banner.spf-text-banner--gradient-blue- a, .spf-body .spf-text-banner.spf-text-banner--gradient-blue- span {
+    color:#f0f3f5;
+}
+
+
+
+.spf-body .spf-text-banner.spf-text-banner--image-gradient-tc .spf-text-banner--image-content:before {
+    background: #0066fb !important; /* Old browsers */
+    background: -moz-linear-gradient(left, #0066fb 0%, #4e2984 50%, #da1931 100%) !important; /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #0066fb 0%, #4e2984 50%, #da1931 100%) !important; /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #0066fb 0%, #4e2984 50%, #da1931 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0066fb', endColorstr='#da1931', GradientType=1 )!important; /* IE6-9 */
+}
+
+
+/*  end of gradient variations */
+
+
+
+/* Start of solid banner variations */
+
+.spf-body .spf-text-banner.spf-text-banner--primary-navy {
+    background-color: #0078ca;
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--primary-navy a, .spf-body .spf-text-banner.spf-text-banner--primary-navy span {
+    color:#f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--primary-violet {
+    background-color: #482d8d;
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--primary-violet a, .spf-body .spf-text-banner.spf-text-banner--primary-violet span {
+    color:#f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--primary-charcoal {
+    background-color: #414042;
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--primary-charcoal a, .spf-body .spf-text-banner.spf-text-banner--primary-charcoal span {
+    color:#f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--primary-grey {
+    background-color: #acada5;
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--primary-grey a, .spf-body .spf-text-banner.spf-text-banner--primary-grey span {
+    color:#f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--primary-darkgrey {
+    background-color: #313131;
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--primary-darkgrey a, .spf-body .spf-text-banner.spf-text-banner--primary-darkgrey span {
+    color:#f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--primary-yellow {
+    background-color: #fcd502;
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--primary-yellow a, .spf-body .spf-text-banner.spf-text-banner--primary-yellow span {
+    color:#f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--primary-orange {
+    background-color: #e74300;
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--primary-orange a, .spf-body .spf-text-banner.spf-text-banner--primary-orange span {
+    color:#f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--primary-green {
+    background-color: #6a9612;
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--primary-green a, .spf-body .spf-text-banner.spf-text-banner--primary-green span {
+    color:#f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--primary-aqua {
+    background-color: #0c7f89;
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--primary-aqua a, .spf-body .spf-text-banner.spf-text-banner--primary-aqua span {
+    color:#f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--primary-red {
+    background-color: #d20032;
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--primary-red a, .spf-body .spf-text-banner.spf-text-banner--primary-red span {
+    color:#f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--primary-pink {
+    background-color: #ab4399;
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--primary-pink a, .spf-body .spf-text-banner.spf-text-banner--primary-pink span {
+    color:#f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--primary-indigo {
+    background-color: #333092;
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--primary-indigo a, .spf-body .spf-text-banner.spf-text-banner--primary-indigo span {
+    color:#f0f3f5;
+}
+
+/* End of solid banner variations */
+
+/*adding in visible border bottom to anchors */
+.spf-body .spf-text-banner a {border-bottom: solid 1px #fff;}
+/* end Banners from RW - 06 Mar 18 */
+
 
 
 /* Matrix Specific Styles */
     /* defaulting select elements along with the wrapping div for drop down etc in Matrix */
     @media print{
         select{border-color:#000!important}
-        .matrix .sq-form-question-select>div.sq-form-question-answer:after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E   %3Cpath fill='%23000' d='M64 128l64-64-16-16-64 64'/%3E   %3Cpath fill='%23000' d='M64 128l16-16-64-64L0 64'/%3E  %3C/svg%3E")!important}
+        .matrix .sq-form-question-select>div.sq-form-question-answer:after {background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E   %3Cpath fill='%23000' d='M64 128l64-64-16-16-64 64'/%3E   %3Cpath fill='%23000' d='M64 128l16-16-64-64L0 64'/%3E  %3C/svg%3E")!important}
     }
     
     .matrix .sq-form-question-select>div.sq-form-question-answer{position:relative;vertical-align:middle;display:inline-block;background-color:#fff;margin-bottom:.8em;box-sizing:border-box}
