@@ -11,7 +11,7 @@
     <MySource_SET name="suffix_with_divider" value="false" />
     <MySource_DIVIDER></MySource_DIVIDER>
     <MySource_ASSET>
-        <a href="<MySource_PRINT var="asset_link" />?SQ_DESIGN_NAME=spf2&SQ_ACTION=set_design_name" class="is-active no-padding-top"><MySource_PRINT var="asset_short_name" /></a>
+        <a href="<MySource_PRINT var="asset_link" />" class="is-active no-padding-top"><MySource_PRINT var="asset_short_name" /></a>
     </MySource_ASSET>
 </MySource_AREA>
 
@@ -125,7 +125,7 @@
                     <ul class="uikit-link-list uikit-link-list--inline closed">
                         <MySource_ASSET>
                             <li class="<MySource_PRINT var="settings.class" />">
-                                <a href="<MySource_PRINT var="asset_link" />?SQ_DESIGN_NAME=spf2&SQ_ACTION=set_design_name"><MySource_PRINT var="asset_name" /></a>
+                                <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
                                 <MySource_SUB design_area="menu_normal">
                                     <MySource_SET name="show_subs" value="always" />
                                     <MySource_SET name="settings.class.normal" value="" />
@@ -135,7 +135,7 @@
                                     <ul><!--  level two -->
                                         <MySource_ASSET>
                                             <li class="<MySource_PRINT var="settings.class" />">
-                                                <a href="<MySource_PRINT var="asset_link" />?SQ_DESIGN_NAME=spf2&SQ_ACTION=set_design_name"><MySource_PRINT var="asset_name" /></a>
+                                                <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
                                             </li>
                                         </MySource_ASSET>
                                     </ul><!-- end level two -->
@@ -165,7 +165,7 @@
                     <ul class="uikit-link-list uikit-link-list--inline">
                     <MySource_ASSET>
                         <li class="<MySource_PRINT var="settings.class" />">
-                            <a href="<MySource_PRINT var="asset_link" />?SQ_DESIGN_NAME=spf2&SQ_ACTION=set_design_name"><MySource_PRINT var="asset_name" /></a>
+                            <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
                             <MySource_SUB design_area="menu_normal">
                                 <MySource_SET name="show_subs" value="always" />
                                 <MySource_SET name="settings.class.normal" value="" />
@@ -175,7 +175,7 @@
                                 <ul><!--  level two -->
                                     <MySource_ASSET>
                                         <li class="<MySource_PRINT var="settings.class" />">
-                                            <a href="<MySource_PRINT var="asset_link" />?SQ_DESIGN_NAME=spf2&SQ_ACTION=set_design_name"><MySource_PRINT var="asset_name" /></a>
+                                            <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
                                             <MySource_SUB design_area="menu_normal">
                                             <MySource_SET name="show_subs" value="always" />
                                             <MySource_SET name="settings.class.normal" value="" />
@@ -185,7 +185,7 @@
                                                 <ul><!--  level three -->
                                                     <MySource_ASSET>
                                                         <li class="<MySource_PRINT var="settings.class" />">
-                                                            <a href="<MySource_PRINT var="asset_link" />?SQ_DESIGN_NAME=spf2&SQ_ACTION=set_design_name"><MySource_PRINT var="asset_name" /></a>
+                                                            <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
                                                         </li>
                                                     </MySource_ASSET>
                                                 </ul>
@@ -223,7 +223,7 @@
                             <li class=""><a href="/" class="home">Home</a></li>
                             <!-- PREVIOUS PAGE BREADCRUMB (only appears 3 levels down and below) -->
                             <MySource_ASSET>
-                                <li class=""><a href="<MySource_PRINT var="asset_link" />?SQ_DESIGN_NAME=spf2&SQ_ACTION=set_design_name"><MySource_PRINT var="asset_short_name" /></a></li>
+                                <li class=""><a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_short_name" /></a></li>
                             </MySource_ASSET>
                             <!-- CURRENT PAGE BREADCRUMB -->
                             <li><span class="active"><MySource_PRINT var="asset_short_name" /></span></li>
@@ -259,7 +259,7 @@
                             <li><MySource_PRINT id_name="breadcrumbs2" print="yes"/>
                                 <ul>
                                     <MySource_ASSET>
-                                        <li><a href="<MySource_PRINT var="asset_link" />?SQ_DESIGN_NAME=spf2&SQ_ACTION=set_design_name" class="<MySource_PRINT var="settings.class"/>"><MySource_PRINT var="asset_name" /></a>
+                                        <li><a href="<MySource_PRINT var="asset_link" />" class="<MySource_PRINT var="settings.class"/>"><MySource_PRINT var="asset_name" /></a>
                                             <MySource_SUB design_area="menu_normal">
                                                 <MySource_SET name="show_subs" value="on_current" />
                                                 <MySource_SET name="settings.class.normal" value="" />
@@ -268,7 +268,7 @@
                                                 <MySource_SET name="settings.class.has_children" value="has-children" />
                                                 <ul>
                                                     <MySource_ASSET>
-                                                        <li><a href="<MySource_PRINT var="asset_link" />?SQ_DESIGN_NAME=spf2&SQ_ACTION=set_design_name" class="<MySource_PRINT var="settings.class"/>"><MySource_PRINT var="asset_name" /></a>
+                                                        <li><a href="<MySource_PRINT var="asset_link" />" class="<MySource_PRINT var="settings.class"/>"><MySource_PRINT var="asset_name" /></a>
                                                             <MySource_SUB design_area="menu_normal">
                                                                 <MySource_SET name="show_subs" value="on_current" />
                                                                 <MySource_SET name="settings.class.normal" value="" />
@@ -277,7 +277,7 @@
                                                                 <MySource_SET name="settings.class.has_children" value="has-children" />
                                                                 <ul>
                                                                     <MySource_ASSET>
-                                                                        <li><a href="<MySource_PRINT var="asset_link" />?SQ_DESIGN_NAME=spf2&SQ_ACTION=set_design_name" class="<MySource_PRINT var="settings.class"/>"><MySource_PRINT var="asset_name" /></a></li>
+                                                                        <li><a href="<MySource_PRINT var="asset_link" />" class="<MySource_PRINT var="settings.class"/>"><MySource_PRINT var="asset_name" /></a></li>
                                                                     </MySource_ASSET>
                                                                 </ul>
                                                             </MySource_SUB>
@@ -314,7 +314,7 @@
                                 <li class=""><a href="/" class="home">Home</a></li>
                                 <!-- PREVIOUS PAGE BREADCRUMB (only appears 3 levels down and below) -->
                                 <MySource_ASSET>
-                                    <li class=""><a href="<MySource_PRINT var="asset_link" />?SQ_DESIGN_NAME=spf2&SQ_ACTION=set_design_name"><MySource_PRINT var="asset_short_name" /></a></li>
+                                    <li class=""><a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_short_name" /></a></li>
                                 </MySource_ASSET>
                                 <!-- CURRENT PAGE BREADCRUMB -->
                                 <li><span class="active"><MySource_PRINT var="asset_short_name" /></span></li>
