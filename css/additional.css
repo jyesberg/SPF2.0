@@ -700,7 +700,7 @@ form.search-quicklinks-search .query {
     border-bottom: none
 }
 .primary-nav ul ul ul a, .local-nav ul ul ul a {
-    padding-left: 1.6em;
+    padding-left: 3em;
     border-bottom: 0
 }
 .primary-nav ul ul ul ul a, .local-nav ul ul ul ul a {
@@ -791,9 +791,6 @@ ul > li > ul {
     transform: rotate(90deg);
     position:absolute;
     right:5%;
- }
- aside.sidebar ul li ul li a {
-     text-indent:20px;
  }
  .primary-nav ul li:first-child, .local-nav>ul>li:first-child {
     border-top: none;
