@@ -13,7 +13,7 @@
     box-sizing: content-box; /* need to add this since we added the * {box-sizing: border-box} */
 }
 
-/* temp drop down nav styles */
+/* Top nav styles */
 .spf-top-nav ul.uikit-link-list>li {margin:0;}
 .spf-top-nav ul.uikit-link-list>li a {padding:1.6em 1.2em;}
 .spf-top-nav ul.uikit-link-list li ul {display:none; text-align:center;}
@@ -52,6 +52,26 @@
     right: 5%;
     top:20%;
 }
+
+/* Top nav text wrapping styles */
+.spf-top-nav ul.uikit-link-list>li>a {
+    vertical-align: middle;
+    max-width: 150px;
+    height: 74px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: table-cell;
+    padding: 0em 1.2em;
+    text-align: center;
+}
+.spf-top-nav ul.uikit-link-list {
+    display:table;
+    margin-bottom: -7px;
+    margin-top: -1px;
+}
+/* End Top nav text wrapping styles */
+
+
 /* top menu mobile toggle style */
 
 .spf-top-nav-mobile {display:none;}
