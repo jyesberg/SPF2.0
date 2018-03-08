@@ -1083,10 +1083,10 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 .spf-body .spf-text-banner.spf-text-banner--primary-yellow {
     background-color: #fcd502;
-    color: #f0f3f5;
+    color: #000;
 }
 .spf-body .spf-text-banner.spf-text-banner--primary-yellow a, .spf-body .spf-text-banner.spf-text-banner--primary-yellow span {
-    color:#f0f3f5;
+    color:#000;
 }
 .spf-body .spf-text-banner.spf-text-banner--primary-orange {
     background-color: #e74300;
