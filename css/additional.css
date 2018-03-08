@@ -1184,6 +1184,8 @@ aside.sidebar ul ul ul ul ul a:before {
     position: absolute;
     left: 24%;
 }
+/* This may need to be removed at some point - it exists on patternlab but not in the actual template*/
+* {box-sizing:border-box;}
 /* End Styles added 2018-Mar-08 */
 
 
