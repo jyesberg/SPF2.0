@@ -259,7 +259,7 @@
                             <li><MySource_PRINT id_name="breadcrumbs2" print="yes"/>
                                 <ul>
                                     <MySource_ASSET>
-                                        <li><a href="<MySource_PRINT var="asset_link" />" class="<MySource_PRINT var="settings.class"/>"><MySource_PRINT var="asset_name" /></a>
+                                        <li><a href="<MySource_PRINT var="asset_link" />?SQ_DESIGN_NAME=spf2&SQ_ACTION=set_design_name" class="<MySource_PRINT var="settings.class"/>"><MySource_PRINT var="asset_name" /></a>
                                             <MySource_SUB design_area="menu_normal">
                                                 <MySource_SET name="show_subs" value="on_current" />
                                                 <MySource_SET name="settings.class.normal" value="" />
@@ -268,7 +268,7 @@
                                                 <MySource_SET name="settings.class.has_children" value="has-children" />
                                                 <ul>
                                                     <MySource_ASSET>
-                                                        <li><a href="<MySource_PRINT var="asset_link" />" class="<MySource_PRINT var="settings.class"/>"><MySource_PRINT var="asset_name" /></a>
+                                                        <li><a href="<MySource_PRINT var="asset_link" />?SQ_DESIGN_NAME=spf2&SQ_ACTION=set_design_name" class="<MySource_PRINT var="settings.class"/>"><MySource_PRINT var="asset_name" /></a>
                                                             <MySource_SUB design_area="menu_normal">
                                                                 <MySource_SET name="show_subs" value="on_current" />
                                                                 <MySource_SET name="settings.class.normal" value="" />
@@ -277,7 +277,20 @@
                                                                 <MySource_SET name="settings.class.has_children" value="has-children" />
                                                                 <ul>
                                                                     <MySource_ASSET>
-                                                                        <li><a href="<MySource_PRINT var="asset_link" />" class="<MySource_PRINT var="settings.class"/>"><MySource_PRINT var="asset_name" /></a></li>
+                                                                        <li><a href="<MySource_PRINT var="asset_link" />?SQ_DESIGN_NAME=spf2&SQ_ACTION=set_design_name" class="<MySource_PRINT var="settings.class"/>"><MySource_PRINT var="asset_name" /></a>
+                                                                            <MySource_SUB design_area="menu_normal">
+                                                                                <MySource_SET name="show_subs" value="on_current" />
+                                                                                <MySource_SET name="settings.class.normal" value="" />
+                                                                                <MySource_SET name="settings.class.current" value="is-active is-current" />
+                                                                                <MySource_SET name="settings.class.hierarchy" value="active" />
+                                                                                <MySource_SET name="settings.class.has_children" value="has-children" />
+                                                                                <ul>
+                                                                                    <MySource_ASSET>
+                                                                                        <li><a href="<MySource_PRINT var="asset_link" />?SQ_DESIGN_NAME=spf2&SQ_ACTION=set_design_name" class="<MySource_PRINT var="settings.class"/>"><MySource_PRINT var="asset_name" /></a></li>
+                                                                                    </MySource_ASSET>
+                                                                                </ul>
+                                                                            </MySource_SUB>
+                                                                        </li>
                                                                     </MySource_ASSET>
                                                                 </ul>
                                                             </MySource_SUB>
