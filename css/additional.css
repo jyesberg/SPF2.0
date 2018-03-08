@@ -1088,6 +1088,9 @@ input[type=button], input[type=submit], input[type=reset] {
 .spf-body .spf-text-banner.spf-text-banner--primary-yellow a, .spf-body .spf-text-banner.spf-text-banner--primary-yellow span {
     color:#000;
 }
+.spf-body .spf-text-banner.spf-text-banner--primary-yellow a {
+    border-bottom: solid 1px #000;
+}
 .spf-body .spf-text-banner.spf-text-banner--primary-orange {
     background-color: #e74300;
     color: #f0f3f5;
