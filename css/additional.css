@@ -1137,6 +1137,24 @@ input[type=button], input[type=submit], input[type=reset] {
 .spf-body .spf-text-banner a {border-bottom: solid 1px #fff;}
 /* end Banners from RW - 06 Mar 18 */
 
+/* Styles added 2018-Mar-08 */
+aside.sidebar ul ul ul ul a:before {
+    content: '\f0da';
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    margin: -3px 0px 0px 10px;
+    text-decoration: none;
+    float: right;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 19%;
+}
+
+.primary-nav ul ul ul ul a, .local-nav ul ul ul ul a {
+    padding-left:4em;
+}
+/* End Styles added 2018-Mar-08 */
 
 
 /* Matrix Specific Styles */
