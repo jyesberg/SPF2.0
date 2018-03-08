@@ -1135,9 +1135,15 @@ input[type=button], input[type=submit], input[type=reset] {
 
 /*adding in visible border bottom to anchors */
 .spf-body .spf-text-banner a {border-bottom: solid 1px #fff;}
+
 /* end Banners from RW - 06 Mar 18 */
 
 /* Styles added 2018-Mar-08 */
+
+/* fixing banner from exceeding 100% width */
+.spf-body .spf-text-banner {box-sizing: border-box;}
+
+/* side nav level four indenting + arrow */
 aside.sidebar ul ul ul ul a:before {
     content: '\f0da';
     font-family: FontAwesome;
