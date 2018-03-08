@@ -1167,6 +1167,23 @@ aside.sidebar ul ul ul ul a:before {
 .primary-nav ul ul ul ul a, .local-nav ul ul ul ul a {
     padding-left:4em;
 }
+
+/* side nav level five indenting + arrow */
+.primary-nav ul ul ul ul ul a, .local-nav ul ul ul ul ul a {
+    padding-left: 5em;
+}
+aside.sidebar ul ul ul ul ul a:before {
+    content: '\f0da';
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    margin: -3px 0px 0px 10px;
+    text-decoration: none;
+    float: right;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 24%;
+}
 /* End Styles added 2018-Mar-08 */
 
 
