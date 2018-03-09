@@ -18,6 +18,7 @@
 .spf-top-nav ul.uikit-link-list>li a {padding:1.6em 1.2em;}
 .spf-top-nav ul.uikit-link-list li ul {display:none; text-align:center;}
 .spf-top-nav ul.uikit-link-list li:hover>ul {display:block;}
+.spf-top-nav ul.uikit-link-list>li:hover>ul {top:99%;}
 .spf-top-nav ul.uikit-link-list li ul {margin:0; padding:0; position:absolute; z-index:9; background:#f0f3f5}
 .spf-top-nav ul.uikit-link-list li ul li {
     list-style-type:none;
