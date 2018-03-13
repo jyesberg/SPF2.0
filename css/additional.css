@@ -123,7 +123,7 @@ nav.spf-top-nav-mobile ul li li li>a {
     font-style: normal;
     text-decoration: none;
     float: right;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     transform: rotate(90deg);
     position: absolute;
     right: 5%;
@@ -786,7 +786,7 @@ ul > li > ul {
     margin: -3px 0px 0px 10px;
     text-decoration: none;
     float: right;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     transform: rotate(90deg);
     position:absolute;
     right:5%;
@@ -1158,7 +1158,7 @@ aside.sidebar ul ul ul ul a:before {
     margin: -3px 0px 0px 10px;
     text-decoration: none;
     float: right;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     position: absolute;
     left: 19%;
 }
@@ -1179,7 +1179,7 @@ aside.sidebar ul ul ul ul ul a:before {
     margin: -3px 0px 0px 10px;
     text-decoration: none;
     float: right;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     position: absolute;
     left: 24%;
 }
