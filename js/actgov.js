@@ -1,5 +1,7 @@
 'use strict';
 
+var i = 0
+
 if (document.querySelector('.spf-body .spf-side-nav')) {
     SPF.isSideNav(document.querySelector('.spf-body .spf-side-nav'));
 }
@@ -601,3 +603,50 @@ var toggleEdgeCase2 = function toggleEdgeCase2() {
         }
     });
 };
+//# sourceMappingURL=actgov.js.map
+
+//custom jquery top nav toggle
+$('button.showmenu').click(function() {
+    $('.spf-top-nav-mobile>ul').toggleClass('closed');
+});
+
+//equalHeight JS for .spf-article-box
+function equalheight(container) {
+ var currentTallest = 0,
+     currentRowStart = 0,
+     currentDiv = 0,
+     rowDivs = new Array(),
+     $el,
+     topPosition = 0;
+ $(container).each(function() {
+
+   $el = $(this);
+   $($el).height('auto')
+   topPosition = $el.position().top;
+
+   if (currentRowStart != topPosition) {
+     for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+       rowDivs[currentDiv].height(currentTallest);
+     }
+     rowDivs.length = 0; // empty the array
+     currentRowStart = topPosition;
+     currentTallest = $el.height();
+     rowDivs.push($el);
+   } else {
+     rowDivs.push($el);
+     currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+  }
+   for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+     rowDivs[currentDiv].height(currentTallest);
+   }
+ });
+}
+
+$(window).load(function() {
+  equalheight('.equal-height');
+});
+
+
+$(window).resize(function(){
+  equalheight('.equal-height');
+});
