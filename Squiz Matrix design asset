@@ -1,3 +1,25 @@
+<MySource_AREA id_name="edit_plus_exit_area" design_area="exit" print="no"></MySource_AREA>
+<MySource_AREA id_name="edit_plus_token" design_area="csrf_token" print="no"></mysource_area>
+<MySource_AREA id_name="edit_plus_nested_content" design_area="nest_content" print="no" />
+<MySource_AREA id_name="edit_plus_show_if" design_area="show_if">
+  <MySource_SET name="condition" value="simple_edit_mode" />
+  <MySource_THEN>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <title>Loading Edit Mode...</title>
+        <MySource_PRINT id_name="edit_plus_nested_content" />
+      </head>
+      <body>
+        <mysource_print id_name="edit_plus_token" />
+      </body>
+    </html>
+    
+    <MySource_PRINT id_name="edit_plus_exit_area" />
+  </MySource_THEN>
+</MySource_AREA>
 <MySource_AREA id_name="template_options" design_area="declared_vars" print="no">
     <MySource_DECLARE name="middlecolumn" value="col-md-8 col-md-offset-1" type="text" description="col-md-8 col-md-offset-1 without side nav and col-md-8 with sidenav"/>
 </MySource_AREA>
