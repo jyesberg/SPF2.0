@@ -112,14 +112,14 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div class="spf-input-group spf-search-box">
-                                        <span class="spf-group-element-wrapper">
-                                            <input class="uikit-text-input spf-group-element" name="search-box" id="search-box" type="text" value="" placeholder="Search" />
-                                        </span>
-                                        <button class="uikit-btn spf-group-element">
-                                            <i class="fa fa-search fa-2x" aria-hidden="true" ></i>
-                                        </button>
-                                    </div>
+                                    <form action="/search" method="get" role="search">
+                                        <div class="spf-input-group spf-search-box">
+                                            <span class="spf-group-element-wrapper">
+                                                <input class="uikit-text-input spf-group-element" name="query" aria-label="Global search input field" title="Global search input field" id="search-box" type="text" value="" placeholder="Search" onkeydown="if (event.keyCode == 13) document.getElementById('btnSearchGlobal').click()">
+                                            </span>
+                                            <button id="btnSearchGlobal" class="uikit-btn spf-group-element" aria-label="Global search button" title="Global search button"><i class="fa fa-search fa-2x" aria-hidden="true"></i></button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
