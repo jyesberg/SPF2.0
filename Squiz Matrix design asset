@@ -101,10 +101,10 @@
                                     <div class="pull-right header-menu">
                                         <ul class="uikit-link-list uikit-link-list--inline">
                                             <li class="">
-                                                <a href="<MySource_PRINT id_name="global_links" var="about" />" title="Link 1" class="">About us</a>
+                                                <a href="<MySource_PRINT id_name="global_links" var="about" />" title="About Us" class="">About us</a>
                                             </li>
                                             <li class="">
-                                                <a href="<MySource_PRINT id_name="global_links" var="contact" />" title="Link 2" class="">Contact us</a>
+                                                <a href="<MySource_PRINT id_name="global_links" var="contact" />" title="Contact Us" class="">Contact us</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -115,9 +115,9 @@
                                     <form action="/search" method="get" role="search">
                                         <div class="spf-input-group spf-search-box">
                                             <span class="spf-group-element-wrapper">
-                                                <input class="uikit-text-input spf-group-element" name="query" aria-label="Global search input field" title="Global search input field" id="search-box" type="text" value="" placeholder="Search" onkeydown="if (event.keyCode == 13) document.getElementById('btnSearchGlobal').click()">
+                                                <input class="uikit-text-input spf-group-element" name="query" aria-label="Global search input field" title="Search input field" id="search-box" type="text" value="" placeholder="Search" onkeydown="if (event.keyCode == 13) document.getElementById('btnSearchGlobal').click()">
                                             </span>
-                                            <button id="btnSearchGlobal" class="uikit-btn spf-group-element" aria-label="Global search button" title="Global search button"><i class="fa fa-search fa-2x" aria-hidden="true"></i></button>
+                                            <button id="btnSearchGlobal" class="uikit-btn spf-group-element" aria-label="Global search button" title="Search"><i class="fa fa-search fa-2x" aria-hidden="true"></i></button>
                                         </div>
                                     </form>
                                 </div>
@@ -379,13 +379,13 @@
                     <div class="col-md-6">
                         <ul class="uikit-link-list uikit-link-list--inline">
                             <li class="">
-                                <a href="<MySource_PRINT id_name="global_links" var="feedback" />" title="Link 1" class="">Feedback</a>
+                                <a href="<MySource_PRINT id_name="global_links" var="feedback" />" title="Feedback" class="">Feedback</a>
                             </li>
                             <li class="">
-                                <a href="<MySource_PRINT id_name="global_links" var="contact" />" title="Link 2" class="">Contact us</a>
+                                <a href="<MySource_PRINT id_name="global_links" var="contact" />" title="Contact Us" class="">Contact us</a>
                             </li>
                             <li class="">
-                                <a href="<MySource_PRINT id_name="global_links" var="jobs" />" title="Link 2" class="">Jobs</a>
+                                <a href="<MySource_PRINT id_name="global_links" var="jobs" />" title="Jobs" class="">Jobs</a>
                             </li>
                         </ul>
                     </div>
@@ -415,16 +415,16 @@
                     <div class="col-md-5">
                         <ul class="uikit-link-list uikit-link-list--inline uikit-link-list--inverted">
                             <li>
-                                <a href="<MySource_PRINT id_name="global_links" var="accessibility" />" title="Link 1" class="">Accessibility</a>
+                                <a href="<MySource_PRINT id_name="global_links" var="accessibility" />" title="Accessibility" class="">Accessibility</a>
                             </li>
                             <li>
-                                <a href="<MySource_PRINT id_name="global_links" var="privacy" />" title="Link 2" class="">Privacy</a>
+                                <a href="<MySource_PRINT id_name="global_links" var="privacy" />" title="Privacy" class="">Privacy</a>
                             </li>
                             <li>
-                                <a href="<MySource_PRINT id_name="global_links" var="disclaimer" />" title="Link 2" class="">Disclaimer</a>
+                                <a href="<MySource_PRINT id_name="global_links" var="disclaimer" />" title="Disclaimer" class="">Disclaimer</a>
                             </li>
                             <li>
-                                <a href="<MySource_PRINT id_name="global_links" var="copyright" />" title="Link 2" class="">Copyright</a>
+                                <a href="<MySource_PRINT id_name="global_links" var="copyright" />" title="Copyright" class="">Copyright</a>
                             </li>
                         </ul>
                     </div>
