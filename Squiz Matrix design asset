@@ -24,7 +24,7 @@
     <MySource_DECLARE name="middlecolumn" value="col-md-8 col-md-offset-1" type="text" description="col-md-8 col-md-offset-1 without side nav and col-md-8 with sidenav"/>
 </MySource_AREA>
 
-<MySource_AREA id_name="breadcrumbs2" design_area="asset_lineage" print="no">
+<MySource_AREA id_name="left_nav_title" design_area="asset_lineage" print="no">
     <MySource_SET name="start_at_level" value="1" />
     <MySource_SET name="levels_to_print" value="1" />
     <MySource_SET name="prefix_with_home_link" value="true" />
@@ -262,7 +262,7 @@
     
 
 
-        <MySource_AREA id_name="sub_menu" design_area="menu_normal" print="yes">
+        <MySource_AREA id_name="left_nav" design_area="menu_normal" print="yes">
             <MySource_SET name="level" value="sub" />
             <MySource_SET name="show_subs" value="on_current" />
             <MySource_SET name="settings.class.normal" value="" />
@@ -278,7 +278,7 @@
                             Menu
                         </h2>
                         <ul>
-                            <li><MySource_PRINT id_name="breadcrumbs2" print="yes"/>
+                            <li><MySource_PRINT id_name="left_nav_title" print="yes"/>
                                 <ul>
                                     <MySource_ASSET>
                                         <li><a href="<MySource_PRINT var="asset_link" />?SQ_DESIGN_NAME=spf2&SQ_ACTION=set_design_name" class="<MySource_PRINT var="settings.class"/>"><MySource_PRINT var="asset_name" /></a>
