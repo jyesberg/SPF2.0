@@ -42,8 +42,8 @@
     <MySource_DECLARE name="about" value="#" type="text" description="URL for About Us header link"/>
     <MySource_DECLARE name="contact" value="#" type="text" description="URL for Contact Us header link"/>
     <MySource_DECLARE name="header_logo" value="./?a=1115272" type="text" description="URL for Actgov logo"/>
-    <MySource_DECLARE name="news" value="#" type="text" description="URL for Feedback footer link"/>
-    <MySource_DECLARE name="feedback" value="https://www.accesscanberra.act.gov.au/app/ask/" type="text" description="URL for news footer link"/>
+    <MySource_DECLARE name="news" value="#" type="text" description="URL for News footer link"/>
+    <MySource_DECLARE name="feedback" value="https://www.accesscanberra.act.gov.au/app/ask/" type="text" description="URL for Feedback footer link"/>
     <MySource_DECLARE name="languages" value="#" type="text" description="URL for Languages footer link"/>
     <MySource_DECLARE name="sitemap" value="#" type="text" description="URL for Sitemap footer link"/>
     <MySource_DECLARE name="jobs" value="http://www.jobs.act.gov.au" type="text" description="URL for Jobs ACT footer link"/>
