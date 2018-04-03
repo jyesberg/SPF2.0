@@ -21,7 +21,7 @@
   </MySource_THEN>
 </MySource_AREA>
 <MySource_AREA id_name="template_options" design_area="declared_vars" print="no">
-    <MySource_DECLARE name="middlecolumn" value="col-md-8 col-md-offset-1" type="text" description="col-md-8 col-md-offset-1 without side nav and col-md-8 with sidenav"/>
+    <MySource_DECLARE name="middlecolumn" value="col-md-8 col-md-offset-1" type="text" description="col-md-8 without side nav col-md-10 col-md-offset-1 with sidenav"/>
 </MySource_AREA>
 
 <MySource_AREA id_name="left_nav_title" design_area="asset_lineage" print="no">
