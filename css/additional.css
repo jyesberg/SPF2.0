@@ -1210,3 +1210,12 @@ aside.sidebar ul ul ul ul ul a:before {
     @supports (-moz-osx-font-smoothing:auto){html body .matrix .sq-form-question-select>div.sq-form-question-answer select{padding-right:2.4em}}
     /* end matrix select styles */
 /* End Matrix Specific Styles */
+
+
+/* references to Source Sans Pro font */
+@font-face{font-family:'Source Sans Pro';url(./?a=1176518) format('woff2'),url(./?a=1176517) format('woff'),url(./?a=1176516) format('truetype');font-weight:400;font-style:normal}
+
+/* Adding Montserrat headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans",sans-serif;
+}
