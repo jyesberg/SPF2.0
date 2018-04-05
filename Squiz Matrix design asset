@@ -76,6 +76,7 @@
 </head>
 
 <body class='spf-body uikit-body uikit-grid matrix'>
+    <a id="skip" href="#main">Skip to content</a>
 
     <!-- Header -->
     <div class="row">
@@ -333,7 +334,7 @@
 
 
 
-        <div class="<MySource_PRINT id_name="template_options" var="middlecolumn" />">
+        <div class="<MySource_PRINT id_name="template_options" var="middlecolumn" />" id="main">
             
 
                     
