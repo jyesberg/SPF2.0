@@ -20,6 +20,7 @@
     <MySource_PRINT id_name="edit_plus_exit_area" />
   </MySource_THEN>
 </MySource_AREA>
+
 <MySource_AREA id_name="template_options" design_area="declared_vars" print="no">
     <MySource_DECLARE name="middlecolumn" value="col-md-8 col-md-offset-1" type="text" description="col-md-8 without side nav col-md-10 col-md-offset-1 with sidenav"/>
 </MySource_AREA>
@@ -86,10 +87,10 @@
                 <div class="col-md-10">
                     <div class="row">
                         <div class="col-md-8">
-                            <a href="<MySource_PRINT id_name="global_links" var="header_link" />" title="Header logo title" class="uikit-header__logo-wrapper">
+                            <a href="<MySource_PRINT id_name="global_links" var="header_link" />" title="Link to Homepage" class="uikit-header__logo-wrapper">
                                 <ul class="uikit-link-list uikit-link-list--inline">
                                     <li class="uikit-header__logo">
-                                        <img src="<MySource_PRINT id_name="global_links" var="header_logo" />" alt="Header logo" class="uikit-header__logo-image" />
+                                        <img src="<MySource_PRINT id_name="global_links" var="header_logo" />" alt="ACT Government logo" class="uikit-header__logo-image" />
                                     </li>
                                     <li class="uikit-header__logo">
                                         <span class="uikit-header__logo-text"><MySource_PRINT id_name="__global__" var="site_name" /></span>
