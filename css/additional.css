@@ -1222,3 +1222,16 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Remove outline for skip to content on body */
 .uikit-body #main:target {outline:none}
+
+/* Skip to content link styles */
+
+a#skip {
+    position: absolute;
+    top: -500px;
+    color: #000;
+    z-index: 999;
+}
+
+a#skip:focus {
+    top:0px;
+}
