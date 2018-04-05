@@ -1219,3 +1219,6 @@ aside.sidebar ul ul ul ul ul a:before {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat", "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans",sans-serif;
 }
+
+/* Remove outline for skip to content on body */
+.uikit-body #main:target {outline:none}
