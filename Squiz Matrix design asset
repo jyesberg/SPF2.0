@@ -394,13 +394,13 @@
                     </div>
                     <div class="col-md-6 align-right">
                         <div class="spf-social-media-icon-bar">
-                            <a href="#" title="social-media-icon.facebook.title">
+                            <a href="#" title="Link to Facebook">
                             <i class="fa fa-2x fa-facebook-square social-media-icon-sm"></i>
                         </a>
-                            <a href="#" title="social-media-icon.youtube.title">
+                            <a href="#" title="Link to YouTube">
                             <i class="fa fa-2x fa-youtube-square social-media-icon-sm"></i>
                         </a>
-                            <a href="#" title="social-media-icon.twitter.title">
+                            <a href="#" title="Link to Twitter">
                             <i class="fa fa-2x fa-twitter-square social-media-icon-sm"></i>
                         </a>
                         </div>
