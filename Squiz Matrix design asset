@@ -115,7 +115,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <form action="/search" method="get" role="search">
+                                    <form action="/search" method="get" role="search" id="spf-top-search">
                                         <div class="spf-input-group spf-search-box">
                                             <span class="spf-group-element-wrapper">
                                                 <input class="uikit-text-input spf-group-element" name="query" aria-label="Global search input field" title="Search input field" id="search-box" type="text" value="" placeholder="Search" onkeydown="if (event.keyCode == 13) document.getElementById('btnSearchGlobal').click()">
