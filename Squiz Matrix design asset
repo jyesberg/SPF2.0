@@ -102,10 +102,10 @@
                                     <div class="pull-right header-menu">
                                         <ul class="uikit-link-list uikit-link-list--inline">
                                             <li class="">
-                                                <a href="<MySource_PRINT id_name="global_links" var="about" />" title="About Us" class="">About us</a>
+                                                <a href="<MySource_PRINT id_name="global_links" var="about" />" title="Link to About Us" class="">About us</a>
                                             </li>
                                             <li class="">
-                                                <a href="<MySource_PRINT id_name="global_links" var="contact" />" title="Contact Us" class="">Contact us</a>
+                                                <a href="<MySource_PRINT id_name="global_links" var="contact" />" title="Link to Contact Us" class="">Contact us</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -380,13 +380,13 @@
                     <div class="col-md-6">
                         <ul class="uikit-link-list uikit-link-list--inline">
                             <li class="">
-                                <a href="<MySource_PRINT id_name="global_links" var="feedback" />" title="Feedback" class="">Feedback</a>
+                                <a href="<MySource_PRINT id_name="global_links" var="feedback" />" title="Link to Feedback" class="">Feedback</a>
                             </li>
                             <li class="">
-                                <a href="<MySource_PRINT id_name="global_links" var="contact" />" title="Contact Us" class="">Contact us</a>
+                                <a href="<MySource_PRINT id_name="global_links" var="contact" />" title="Link to Contact Us" class="">Contact us</a>
                             </li>
                             <li class="">
-                                <a href="<MySource_PRINT id_name="global_links" var="jobs" />" title="Jobs" class="">Jobs</a>
+                                <a href="<MySource_PRINT id_name="global_links" var="jobs" />" title="Link to Jobs" class="">Jobs</a>
                             </li>
                         </ul>
                     </div>
@@ -416,16 +416,16 @@
                     <div class="col-md-5">
                         <ul class="uikit-link-list uikit-link-list--inline uikit-link-list--inverted">
                             <li>
-                                <a href="<MySource_PRINT id_name="global_links" var="accessibility" />" title="Accessibility" class="">Accessibility</a>
+                                <a href="<MySource_PRINT id_name="global_links" var="accessibility" />" title="Link to Accessibility" class="">Accessibility</a>
                             </li>
                             <li>
-                                <a href="<MySource_PRINT id_name="global_links" var="privacy" />" title="Privacy" class="">Privacy</a>
+                                <a href="<MySource_PRINT id_name="global_links" var="privacy" />" title="Link to Privacy" class="">Privacy</a>
                             </li>
                             <li>
-                                <a href="<MySource_PRINT id_name="global_links" var="disclaimer" />" title="Disclaimer" class="">Disclaimer</a>
+                                <a href="<MySource_PRINT id_name="global_links" var="disclaimer" />" title="Link to Disclaimer" class="">Disclaimer</a>
                             </li>
                             <li>
-                                <a href="<MySource_PRINT id_name="global_links" var="copyright" />" title="Copyright" class="">Copyright</a>
+                                <a href="<MySource_PRINT id_name="global_links" var="copyright" />" title="Link to Copyright" class="">Copyright</a>
                             </li>
                         </ul>
                     </div>
