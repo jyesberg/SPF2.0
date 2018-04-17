@@ -1235,3 +1235,19 @@ a#skip {
 a#skip:focus {
     top:0px;
 }
+
+/* Hiding elements from print */
+
+@media print {
+    .spf-top-nav-mobile, .local-nav, .header-search-row, .top-nav-hr, .spf-page-content--left, header {display:none;}
+}
+
+/* Temporary styles until FB template sorted */
+#search-inner-wrapper {margin-left: 5%; width: 75%;}
+#search-facets {width:20%;}
+#search-results {max-width: max-content;}
+
+/* Remove border from element */
+.spf-body .no-border {
+    border: none
+}
