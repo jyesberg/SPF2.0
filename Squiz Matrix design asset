@@ -35,7 +35,7 @@
     <MySource_SET name="suffix_with_divider" value="false" />
     <MySource_DIVIDER></MySource_DIVIDER>
     <MySource_ASSET>
-        <a href="<MySource_PRINT var="asset_link" />" class="is-active no-padding-top"><MySource_PRINT var="asset_short_name" /></a>
+        <a href="<MySource_PRINT var="asset_link" />" class="is-active"><MySource_PRINT var="asset_short_name" /></a>
     </MySource_ASSET>
 </MySource_AREA>
 
@@ -275,7 +275,7 @@
             <MySource_SET name="settings.class.has_children" value="has-children" />
             <MySource_SET name="unwanted_asset_types" value="folder, file" />
 
-            <div class="col-md-2 col-md-offset-1 spf-page-content--left">
+            <div class="col-md-2 col-md-offset-1 spf-page-content--left no-padding-top">
                 <aside class="sidebar">
                     <nav class="local-nav" aria-label="main navigation">
                         <h2 class="is-visuallyhidden">
