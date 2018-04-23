@@ -282,7 +282,7 @@
                             Menu
                         </h2>
                         <ul>
-                            <li><MySource_PRINT id_name="left_nav_title" print="yes"/>
+                            <li><MySource_PRINT id_name="left_nav_title" print="yes" />
                                 <ul>
                                     <MySource_ASSET>
                                         <li><a href="<MySource_PRINT var="asset_link" />?SQ_DESIGN_NAME=spf2&SQ_ACTION=set_design_name" class="<MySource_PRINT var="settings.class"/>"><MySource_PRINT var="asset_name" /></a>
