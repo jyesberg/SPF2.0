@@ -1251,3 +1251,6 @@ a#skip:focus {
 .spf-body .no-border {
     border: none
 }
+
+/* set header ul to display block to be 100% width of container */
+.uikit-header__logo-wrapper ul.uikit-link-list.uikit-link-list--inline {display:block;}
