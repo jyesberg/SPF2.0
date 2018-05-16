@@ -54,7 +54,7 @@
     <MySource_DECLARE name="disclaimer" value="#" type="text" description="URL for Disclaimer footer link"/>
     <MySource_DECLARE name="copyright" value="#" type="text" description="URL for Copyright footer link"/>
     <MySource_DECLARE name="accessibility" value="#" type="text" description="URL for Accessibility footer link"/>
-    <MySource_DECLARE name="ga_code" value="UA-xxxxxxx-x" type="text" description="Google Analytics Code (forget this and you have no analytics)"/>
+    <MySource_DECLARE name="ga_code" value="UA-xxxxxxx-x" type="text" description="Google Analytics Code (necessary for analytics)"/>
 </MySource_AREA>
 <!DOCTYPE html>
 <html lang="en">
