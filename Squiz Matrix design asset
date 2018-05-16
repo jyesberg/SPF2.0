@@ -22,7 +22,7 @@
 </MySource_AREA>
 
 <MySource_AREA id_name="template_options" design_area="declared_vars" print="no">
-    <MySource_DECLARE name="middlecolumn" value="col-md-8 col-md-offset-1" type="text" description="col-md-8 without side nav col-md-10 col-md-offset-1 with sidenav"/>
+    <MySource_DECLARE name="middlecolumn" value="col-md-8" type="text" description="col-md-8 for subpages with sidenav, col-md-10 col-md-offset-1 for home page and pages without sidenav"/>
     <MySource_DECLARE name="banner_colour" value="gradient-navy-violet" type="text" description="Put in either gradient-colour-colour or primary-colour"/>
 </MySource_AREA>
 
