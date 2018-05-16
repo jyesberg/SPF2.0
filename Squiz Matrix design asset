@@ -45,6 +45,7 @@
     <MySource_DECLARE name="contact" value="#" type="text" description="URL for Contact Us header link"/>
     <MySource_DECLARE name="header_logo" value="./?a=1115272" type="text" description="URL for Actgov logo"/>
     <MySource_DECLARE name="news" value="#" type="text" description="URL for News footer link"/>
+    <MySource_DECLARE name="breadcrumbs_home" value="/" type="text" description="/ for root level sites, asset number or relative path for subsites"/>
     <MySource_DECLARE name="feedback" value="https://www.accesscanberra.act.gov.au/app/ask/" type="text" description="URL for Feedback footer link"/>
     <MySource_DECLARE name="languages" value="#" type="text" description="URL for Languages footer link"/>
     <MySource_DECLARE name="sitemap" value="#" type="text" description="URL for Sitemap footer link"/>
@@ -246,7 +247,7 @@
                 <div class="col-md-10 col-md-offset-1">
                     <div class="uikit-breadcrumbs" aria-label="breadcrumb">
                         <ul class="uikit-link-list uikit-link-list--inline">
-                            <li class=""><a href="/" class="home">Home</a></li>
+                            <li class=""><a href="<MySource_PRINT id_name="global_links" var="breadcrumbs_home" />" class="home">Home</a></li>
                             <!-- PREVIOUS PAGE BREADCRUMB (only appears 3 levels down and below) -->
                             <MySource_ASSET>
                                 <li class=""><a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_short_name" /></a></li>
@@ -350,7 +351,7 @@
                     <div class="row">
                         <div class="uikit-breadcrumbs" aria-label="breadcrumb">
                             <ul class="uikit-link-list uikit-link-list--inline">
-                                <li class=""><a href="/" class="home">Home</a></li>
+                                <li class=""><a href="<MySource_PRINT id_name="global_links" var="breadcrumbs_home" />" class="home">Home</a></li>
                                 <!-- PREVIOUS PAGE BREADCRUMB (only appears 3 levels down and below) -->
                                 <MySource_ASSET>
                                     <li class=""><a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_short_name" /></a></li>
