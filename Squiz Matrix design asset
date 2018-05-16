@@ -436,10 +436,8 @@
                     <MySource_AREA id_name="footer_logos" design_area="nest_content">
                         <MySource_SET name="type_codes"  value="page" />
                     </MySource_AREA>
-                    </div>
                 </div>
             </div>
-
         </footer>
         <!-- ************* -->
     </div>
