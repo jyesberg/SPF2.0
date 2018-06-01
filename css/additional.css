@@ -566,6 +566,9 @@ form.search-quicklinks-search .query {
     .spf-body .uikit-header .uikit-header__logo-wrapper .uikit-header__logo {border:none;}
 }
 
+/* Remove float on header logo wrapper so block element takes up 100% width of parent container */
+.spf-body .uikit-header .uikit-header__logo-wrapper {float:none;}
+
 /* side nav styling 20171212 */
 
 .visuallyhidden, .is-visuallyhidden {
