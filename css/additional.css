@@ -1257,3 +1257,10 @@ a#skip:focus {
 
 /* set header ul to display block to be 100% width of container */
 .uikit-header__logo-wrapper ul.uikit-link-list.uikit-link-list--inline {display:block;}
+
+/* set text inside dark breadcrumbs banner to white */
+.spf-text-banner--dark a, .spf-text-banner--dark span {
+    color: #fff;
+    border-color: #edd7e9;
+    transition: color .1s ease-in-out;
+}
