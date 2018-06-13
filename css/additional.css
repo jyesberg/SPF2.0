@@ -1264,3 +1264,6 @@ a#skip:focus {
     border-color: #edd7e9;
     transition: color .1s ease-in-out;
 }
+
+/* give .spf-body .spf-article-box a bottom margin */
+.spf-body .spf-article-box {margin-bottom:10px;}
