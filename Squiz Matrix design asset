@@ -232,6 +232,7 @@
 
     <!-- Main Section -->
     <MySource_AREA id_name="banner_image" design_area="nest_content" />
+    <MySource_AREA id_name="gradient_banner" design_area="nest_content" />
     
     
     
