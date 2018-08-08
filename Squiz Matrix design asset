@@ -50,6 +50,7 @@
     <MySource_DECLARE name="languages" value="#" type="text" description="URL for Languages footer link"/>
     <MySource_DECLARE name="sitemap" value="#" type="text" description="URL for Sitemap footer link"/>
     <MySource_DECLARE name="jobs" value="http://www.jobs.act.gov.au" type="text" description="URL for Jobs ACT footer link"/>
+    <MySource_DECLARE name="esa" value="http://www.esa.act.gov.au" type="text" description="URL for ESA footer link"/>
     <MySource_DECLARE name="privacy" value="#" type="text" description="URL for Privacy footer link"/>
     <MySource_DECLARE name="disclaimer" value="#" type="text" description="URL for Disclaimer footer link"/>
     <MySource_DECLARE name="copyright" value="#" type="text" description="URL for Copyright footer link"/>
@@ -392,6 +393,9 @@
                             </li>
                             <li class="">
                                 <a href="<MySource_PRINT id_name="global_links" var="jobs" />" title="Link to Jobs" class="">Jobs</a>
+                            </li>
+                            <li class="">
+                                <a href="<MySource_PRINT id_name="global_links" var="esa" />" title="Link to Emergency Services" class="">Emergency Services</a>
                             </li>
                         </ul>
                     </div>
