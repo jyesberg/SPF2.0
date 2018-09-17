@@ -1264,6 +1264,9 @@ a#skip:focus {
     transition: color .1s ease-in-out;
 }
 
+/* set links in breadcrumbs to have black font when hovered */
+.uikit-body .uikit-breadcrumbs a:focus, .uikit-body .uikit-breadcrumbs a:hover {color:#000;}
+
 /* give .spf-body .spf-article-box a bottom margin */
 .spf-body .spf-article-box {margin-bottom:10px;}
 
