@@ -238,7 +238,7 @@
     
     
     
-    <MySource_AREA id_name="breadcrumbs_banner" design_area="asset_lineage" print="no">
+    <MySource_AREA id_name="breadcrumbs_banner" design_area="asset_lineage" print="yes">
     <MySource_SET name="prefix_with_home_link" value="false" />
     <MySource_SET name="suffix_with_current_link" value="false" />
     <MySource_SET name="prefix_with_divider" value="false" />
