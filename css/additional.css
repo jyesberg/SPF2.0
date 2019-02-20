@@ -1224,11 +1224,11 @@ input[type=button], input[type=submit], input[type=reset] {
 .spf-body .spf-text-banner.spf-text-banner--image-gradient.violet-indigo a, .spf-body .spf-text-banner.spf-text-banner--image-gradient.violet-indigo span {
     color: #f0f3f5;
 }
-.spf-body .spf-text-banner.spf-text-banner--image-gradient.blue- .spf-text-banner--image-content:before {
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.blue .spf-text-banner--image-content:before {
     background: linear-gradient(to right, #2c4fac 0%,#1d92e2 100%);
     color:#f0f3f5;
  }
-.spf-body .spf-text-banner.spf-text-banner--image-gradient.blue- a, .spf-body .spf-text-banner.spf-text-banner--image-gradient.blue- span {
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.blue a, .spf-body .spf-text-banner.spf-text-banner--image-gradient.blue span {
     color:#f0f3f5;
 }
 /* End JY gradient banners */
