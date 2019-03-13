@@ -32,10 +32,10 @@ If setting SPF2 up on an already existing site some of these steps can be skippe
 	7.	banner_image (nest #1120824 in here, only required if you're using an image banner somewhere, usually home page, note this requires step 5 to work)
 11.	create a customisation of the master customisation and title it 'Site Name SPF 2 - Home' and customise the following:  
 	1.	breadcrumbs_banner (set print to no)
-	2.	template_options (set the home page width to 'col-md-10 col-md-offset-1')
+	2.	template_options (set 'middlecolumn' to 'col-md-10 col-md-offset-1')
 	3.	left_nav (set print to no)
 12.	create a customisation of the master customisation and title it 'Site Name SPF 2 – No left nav' and customise the following:  
-	1.	template_options (set the home page width to 'col-md-10 col-md-offset-1')
+	1.	template_options (set 'middlecolumn' to 'col-md-10 col-md-offset-1')
 	2.	left_nav (set print to no)
 13.	apply the master customisation to the site asset, apply the home customisation as an override to the home page asset
 14.	Request that the OST adds the domain of your website to the designs folder to avoid any cross-domain HTTPS issues.
