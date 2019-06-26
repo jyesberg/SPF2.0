@@ -452,6 +452,58 @@
     </div>
     <!--endnoindex-->
 
+    <!--noindex-->
+    <!--Mobile navigation-->
+    <MySource_AREA id_name="mobile_nav_new" design_area="menu_normal" print="yes" description="Navigation for lower resolutions">
+    <MySource_SET name="level" value="top" />
+    <MySource_SET name="show_subs" value="always" />
+    <MySource_SET name="settings.class.normal" value="" />
+    <MySource_SET name="settings.class.current" value="menu-item--active-trail" />
+    <MySource_SET name="settings.class.hierarchy" value="menu-item--active-trail" />
+    <MySource_SET name="settings.class.has_children" value="has-children2" />
+        <nav role="navigation" aria-labelledby="-menu" class="mobile-menu block block-menu navigation menu--main">
+            <h2 class="sr-only" id="-menu">Main navigation</h2>
+            <a href="#main" class="sr-only focusable skip-link">Skip to main content</a>
+            <ul class="menu spf-side-nav show">
+                <MySource_ASSET>
+                <li class="menu-item menu-item--expanded <MySource_PRINT var="settings.class" /> spf-side-nav--first">
+                    <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
+                    <a class="expand active" aria-expanded="true" aria-label="Toggle sub-navigation" href="#expand"><i class="fa fa-chevron-down"></i></a>
+                    <MySource_SUB design_area="menu_normal">                            
+                    <MySource_SET name="show_subs" value="always" />
+                    <MySource_SET name="settings.class.normal" value="" />
+                    <MySource_SET name="settings.class.current" value="is-active" />
+                    <MySource_SET name="settings.class.hierarchy" value="is-active" />
+                    <MySource_SET name="settings.class.has_children" value="has-children2" />
+                    <ul class="menu spf-side-nav--second">
+                        <MySource_ASSET>
+                        <li class="menu-item menu-item--expanded <MySource_PRINT var="settings.class" />">
+                            <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a><a class="expand active" aria-expanded="true" aria-label="Toggle sub-navigation" href="#expand"><i class="fa fa-chevron-down"></i></a>
+                            <MySource_SUB design_area="menu_normal">
+                            <MySource_SET name="show_subs" value="always" />
+                            <MySource_SET name="settings.class.normal" value="" />
+                            <MySource_SET name="settings.class.current" value="is-active" />
+                            <MySource_SET name="settings.class.hierarchy" value="is-active" />
+                            <MySource_SET name="settings.class.has_children" value="" />
+                            <ul class="menu spf-side-nav--second">
+                                <MySource_ASSET>
+                                <li class="menu-item">
+                                    <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
+                                </li>
+                                </MySource_ASSET>
+                            </ul>
+                            </MySource_SUB>
+                        </li>
+                        </MySource_ASSET>
+                    </ul>
+                    </MySource_SUB>
+                </li>                    
+                </MySource_ASSET>
+            </ul>
+        </nav>
+    </MySource_AREA>
+    <!--End mobile navigation-->
+    <!--endnoindex-->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="./?a=1124467"><\/script>')</script>
