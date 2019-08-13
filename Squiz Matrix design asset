@@ -141,7 +141,7 @@
 
 
     <!-- Mobile Nav -->
-    <MySource_AREA id_name="top_nav_mobile" design_area="menu_normal" print="yes" description="top navigation for mobile">
+    <MySource_AREA id_name="top_nav_mobile" design_area="menu_normal" print="no" description="top navigation for mobile">
     <MySource_SET name="level" value="top" />
     <MySource_SET name="show_subs" value="always" />
     <MySource_SET name="settings.class.normal" value="" />
