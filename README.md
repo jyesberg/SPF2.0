@@ -3,7 +3,7 @@ Squiz Matrix SPF2 template for ACT Government websites
 
 Refer to https://actgovproject.bitbucket.io/?p=all for a full list of elements and how they look and function.
 
-Current version is 2.1.0
+Current version is 2.1.1
 
 ## Steps to setup a new SPF2 site in Matrix ##
 If setting SPF2 up on an already existing site some of these steps can be skipped.
