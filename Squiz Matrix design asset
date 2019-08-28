@@ -83,6 +83,8 @@
 <!--noindex-->
 <MySource_AREA id_name="warning_alert" design_area="nest_content" />
     <a id="skip" href="#main">Skip to content</a>
+    
+    <MySource_AREA id_name="emergency_banner" design_area="nest_content" />
 
     <!-- Header -->
     <div class="row">
