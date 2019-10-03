@@ -23,7 +23,7 @@
 
 <MySource_AREA id_name="template_options" design_area="declared_vars" print="no">
     <MySource_DECLARE name="middlecolumn" value="col-md-8" type="text" description="col-md-8 for subpages with sidenav, col-md-10 col-md-offset-1 for home page and pages without sidenav"/>
-    <MySource_DECLARE name="banner_colour" value="gradient-navy-violet" type="text" description="Put in either gradient-colour-colour or primary-colour, note this is strictly for the breadcrumbs banner"/>
+    <MySource_DECLARE name="breadcrumbs_banner_colour" value="gradient-navy-violet" type="text" description="Put in either gradient-colour-colour or primary-colour, note this is strictly for the breadcrumbs banner"/>
 </MySource_AREA>
 
 <MySource_AREA id_name="left_nav_title" design_area="asset_lineage" print="no">
@@ -250,7 +250,7 @@
     <MySource_SET name="suffix_with_divider" value="false" />
     <MySource_DIVIDER></MySource_DIVIDER>
         <div class="row">
-            <div class="spf-text-banner spf-text-banner--<MySource_PRINT id_name="template_options" var="banner_colour" />">
+            <div class="spf-text-banner spf-text-banner--<MySource_PRINT id_name="template_options" var="breadcrumbs_banner_colour" />">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="uikit-breadcrumbs" aria-label="breadcrumb">
                         <ul class="uikit-link-list uikit-link-list--inline">
