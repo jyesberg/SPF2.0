@@ -931,6 +931,7 @@ input[type=button], input[type=submit], input[type=reset] {
     cursor: pointer;
     transition: background .1s ease;
     margin: 3.2em 0 0 0;
+    -webkit-appearance: none;
 }
 
   /* End Bringing across RW default form styles on 2018-Feb-06 */
