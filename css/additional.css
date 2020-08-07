@@ -1911,7 +1911,18 @@ html:not(.js) #block-emergencycontacttakeover .emergency-contact-drop-down:focus
 
 /* error alert border colour update */
 .uikit-page-alerts--error {border-color:#d20032}
+/* end error alert border colour update */
 
 /* Tabs fix */
 .spf-body .spf-tabs-menu .uikit-link-list {z-index:2;}
 .spf-body .spf-tabs-content {z-index:0;}
+/* End tabs fix*/
+
+blockquote {
+    background: #f0f3f5;
+    padding: 24px;
+    padding: 1.5rem;
+    font-weight: bold;
+    margin-left: 0;
+    margin-right: 0;
+}
