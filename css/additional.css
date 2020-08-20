@@ -1926,3 +1926,6 @@ blockquote {
     margin-left: 0;
     margin-right: 0;
 }
+
+.spf-image-inner img {width:100%;}
+.spf-image-outer, .spf-banner-image {height:auto; max-height:420px;}
