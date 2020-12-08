@@ -1,6 +1,5 @@
 <MySource_AREA id_name="editplus" design_area="editplus"/>
 
-
 <MySource_AREA id_name="template_options" design_area="declared_vars" print="no">
     <MySource_DECLARE name="middlecolumn" value="col-md-8" type="text" description="col-md-8 for subpages with sidenav, col-md-10 col-md-offset-1 for home page and pages without sidenav"/>
     <MySource_DECLARE name="breadcrumbs_banner_colour" value="gradient-navy-violet" type="text" description="Put in either gradient-colour-colour or primary-colour, note this is strictly for the breadcrumbs banner"/>
@@ -53,7 +52,7 @@
     
     
     <link rel="stylesheet" type="text/css" href="./?a=1115253">
-    <link rel="stylesheet" type="text/css" href="./?a=1115260">
+    <link rel="stylesheet" type="text/css" href="./?a=1671075">
     <link rel="stylesheet" type="text/css" href="./?a=1124492">
     <MySource_AREA id_name="nested_css_references" design_area="nest_content" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -116,53 +115,17 @@
                     </div>
                 </div>
                 <div class="col-md-1"></div>
+                
+                <div class="btn-container">
+                  <button class="nav-btn hamburge hamburger--spin" type="button" aria-label="menu button" aria-expanded="false"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+                </div>
             </header>
         </div>
     </div>
     <!-- ************* -->
 
 
-    <!-- Mobile Nav -->
-    <MySource_AREA id_name="top_nav_mobile" design_area="menu_normal" print="no" description="top navigation for mobile">
-    <MySource_SET name="level" value="top" />
-    <MySource_SET name="show_subs" value="always" />
-    <MySource_SET name="settings.class.normal" value="" />
-    <MySource_SET name="settings.class.current" value="active" />
-    <MySource_SET name="settings.class.hierarchy" value="active" />
-    <MySource_SET name="settings.class.has_children" value="has-children" />
-        <div class="row">
-            <div class='col-md-10 col-md-offset-1 no-padding'>
-                <nav class="spf-top-nav-mobile">
-                    <button class="showmenu uikit-btn uikit-btn--secondary uikit-btn--block">Menu <i class="fa fa-bars"></i></button>
-                    <ul class="uikit-link-list uikit-link-list--inline closed">
-                        <MySource_ASSET>
-                            <li class="<MySource_PRINT var="settings.class" />">
-                                <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
-                                <MySource_SUB design_area="menu_normal">
-                                    <MySource_SET name="show_subs" value="always" />
-                                    <MySource_SET name="settings.class.normal" value="" />
-                                    <MySource_SET name="settings.class.current" value="active" />
-                                    <MySource_SET name="settings.class.hierarchy" value="active" />
-                                    <MySource_SET name="settings.class.has_children" value="has-children" />
-                                    <ul><!--  level two -->
-                                        <MySource_ASSET>
-                                            <li class="<MySource_PRINT var="settings.class" />">
-                                                <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
-                                            </li>
-                                        </MySource_ASSET>
-                                    </ul><!-- end level two -->
-                                </MySource_SUB>
-                            </li>
-                        </MySource_ASSET>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </MySource_AREA>
-    
-    <!-- end Mobile Nav -->
-
-
+    <!-- Top Nav -->
     <!-- Top Nav -->
     <MySource_AREA id_name="top_nav" design_area="menu_normal" print="yes" description="Drop down menu for top level architecture">
     <MySource_SET name="level" value="top" />
@@ -171,48 +134,35 @@
     <MySource_SET name="settings.class.current" value="active" />
     <MySource_SET name="settings.class.hierarchy" value="active" />
     <MySource_SET name="settings.class.has_children" value="has-children" />
-        <div class="row">
-            <div class='col-md-10 col-md-offset-1 no-padding'>
-                <nav class="spf-top-nav">
-                    <ul class="uikit-link-list uikit-link-list--inline">
-                    <MySource_ASSET>
-                        <li class="<MySource_PRINT var="settings.class" />">
-                            <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
-                            <MySource_SUB design_area="menu_normal">
-                                <MySource_SET name="show_subs" value="always" />
-                                <MySource_SET name="settings.class.normal" value="" />
-                                <MySource_SET name="settings.class.current" value="active" />
-                                <MySource_SET name="settings.class.hierarchy" value="active" />
-                                <MySource_SET name="settings.class.has_children" value="has-children" />
-                                <ul><!--  level two -->
-                                    <MySource_ASSET>
-                                        <li class="<MySource_PRINT var="settings.class" />">
-                                            <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
-                                            <MySource_SUB design_area="menu_normal">
-                                            <MySource_SET name="show_subs" value="always" />
-                                            <MySource_SET name="settings.class.normal" value="" />
-                                            <MySource_SET name="settings.class.current" value="active" />
-                                            <MySource_SET name="settings.class.hierarchy" value="active" />
-                                            <MySource_SET name="settings.class.has_children" value="" />
-                                                <ul><!--  level three -->
-                                                    <MySource_ASSET>
-                                                        <li class="<MySource_PRINT var="settings.class" />">
-                                                            <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
-                                                        </li>
-                                                    </MySource_ASSET>
-                                                </ul>
-                                            </MySource_SUB>
-                                        </li>
-                                    </MySource_ASSET>
-                                </ul><!-- end level two -->
-                            </MySource_SUB>
-                        </li>
-                        </MySource_ASSET>
-                    </ul>
-                </nav>
+      <nav class="top-navigation">
+          <div class="nav-container">
+            <div class="container inner-container">
+              <button class="btn--close" aria-label="close button"><i class="close-icon" aria-hidden="true"></i></button>
+              <div class="logo-container"><a class="logo" href="<MySource_PRINT id_name="global_links" var="header_link" />" title="Home"><img src="./?a=1628537" alt="Header logo"><span><MySource_PRINT id_name="__global__" var="site_name" /></span></a></div>
+                  <ul>
+                      <MySource_ASSET>
+                          <li class="<MySource_PRINT var="settings.class" />">
+                              <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /><span class="icon-cmtedd-arrow-down expand"><z class="fa fa-chevron-down"></z></span></a>
+                                <MySource_SUB design_area="menu_normal">
+                                    <MySource_SET name="show_subs" value="always" />
+                                    <MySource_SET name="settings.class.normal" value="" />
+                                    <MySource_SET name="settings.class.current" value="active" />
+                                    <MySource_SET name="settings.class.hierarchy" value="active" />
+                                    <MySource_SET name="settings.class.has_children" value="has-children" />
+                                    <ul class="submenu">
+                                      <MySource_ASSET>
+                                        <li><a href="<MySource_PRINT var="asset_link" />" title="<MySource_PRINT var="asset_name" />"><MySource_PRINT var="asset_name" /></a></li>
+                                      </MySource_ASSET>
+                                    </ul>
+                                  </MySource_SUB>
+                          </li>
+                      </MySource_ASSET>
+                      
+                  </ul>
             </div>
-        </div>
-    </MySource_AREA>
+          </div>
+        </nav>
+      </MySource_AREA>
     <!-- End Top Nav -->
     <!--endnoindex-->
 
@@ -363,7 +313,7 @@
 
     <!--noindex-->
     <div class="row">
-    
+        
         <!-- Acknowledgement Footer -->
         <footer class=" uikit-footer uikit-footer-acknowledgement">
           <div class="col-md-1"></div>
@@ -452,58 +402,7 @@
     </div>
     <!--endnoindex-->
 
-    <!--noindex-->
-    <!--Mobile navigation-->
-    <MySource_AREA id_name="mobile_nav_new" design_area="menu_normal" print="yes" description="Navigation for lower resolutions">
-    <MySource_SET name="level" value="top" />
-    <MySource_SET name="show_subs" value="always" />
-    <MySource_SET name="settings.class.normal" value="" />
-    <MySource_SET name="settings.class.current" value="menu-item--active-trail" />
-    <MySource_SET name="settings.class.hierarchy" value="menu-item--active-trail" />
-    <MySource_SET name="settings.class.has_children" value="has-children2" />
-        <nav role="navigation" aria-labelledby="-menu" class="mobile-menu block block-menu navigation menu--main">
-            <h2 class="sr-only" id="-menu">Main navigation</h2>
-            <a href="#main" class="sr-only focusable skip-link">Skip to main content</a>
-            <ul class="menu spf-side-nav show">
-                <MySource_ASSET>
-                <li class="menu-item menu-item--expanded <MySource_PRINT var="settings.class" /> spf-side-nav--first">
-                    <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
-                    <a class="expand active" aria-expanded="true" aria-label="Toggle sub-navigation" href="#expand"><i class="fa fa-chevron-down"></i></a>
-                    <MySource_SUB design_area="menu_normal">                            
-                    <MySource_SET name="show_subs" value="always" />
-                    <MySource_SET name="settings.class.normal" value="" />
-                    <MySource_SET name="settings.class.current" value="is-active" />
-                    <MySource_SET name="settings.class.hierarchy" value="is-active" />
-                    <MySource_SET name="settings.class.has_children" value="has-children2" />
-                    <ul class="menu spf-side-nav--second">
-                        <MySource_ASSET>
-                        <li class="menu-item menu-item--expanded <MySource_PRINT var="settings.class" />">
-                            <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a><a class="expand active" aria-expanded="true" aria-label="Toggle sub-navigation" href="#expand"><i class="fa fa-chevron-down"></i></a>
-                            <MySource_SUB design_area="menu_normal">
-                            <MySource_SET name="show_subs" value="always" />
-                            <MySource_SET name="settings.class.normal" value="" />
-                            <MySource_SET name="settings.class.current" value="is-active" />
-                            <MySource_SET name="settings.class.hierarchy" value="is-active" />
-                            <MySource_SET name="settings.class.has_children" value="" />
-                            <ul class="menu spf-side-nav--second">
-                                <MySource_ASSET>
-                                <li class="menu-item">
-                                    <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
-                                </li>
-                                </MySource_ASSET>
-                            </ul>
-                            </MySource_SUB>
-                        </li>
-                        </MySource_ASSET>
-                    </ul>
-                    </MySource_SUB>
-                </li>                    
-                </MySource_ASSET>
-            </ul>
-        </nav>
-    </MySource_AREA>
-    <!--End mobile navigation-->
-    <!--endnoindex-->
+
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="./?a=1424234"><\/script>')</script>
@@ -622,8 +521,6 @@ if (typeof jQuery != 'undefined') {
 
 
 </script>
-
-
 </body>
 
 </html>
