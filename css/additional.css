@@ -2317,21 +2317,6 @@ nav .nav-search-container .inner-container ul.links-container li {
         max-width: calc(50% - 0.6rem);
     }
 }
-nav .nav-search-container .inner-container ul.links-container li.education {
-    background: url(mysource_files/links-bg/education.png);
-}
-nav .nav-search-container .inner-container ul.links-container li.health {
-    background: url(mysource_files/links-bg/health.png);
-}
-nav .nav-search-container .inner-container ul.links-container li.gunghalin {
-    background: url(mysource_files/links-bg/gunghalin.png);
-}
-nav .nav-search-container .inner-container ul.links-container li.woden {
-    background: url(mysource_files/links-bg/woden.png);
-}
-nav .nav-search-container .inner-container ul.links-container li.central {
-    background: url(mysource_files/links-bg/central.png);
-}
 nav .nav-search-container .inner-container ul.links-container li a {
     display: -webkit-box;
     display: -ms-flexbox;
