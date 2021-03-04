@@ -2507,3 +2507,9 @@ nav.local-nav {z-index:119;}
         width: 84em;
     }
 }
+
+/* End Alignment etc */
+
+/* General styles */
+.uikit-grid .hidden {display:none;}
+/* End General styles */
