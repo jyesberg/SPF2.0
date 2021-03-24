@@ -2502,10 +2502,10 @@ nav.local-nav {z-index:119;}
     }
 }
 
-@media only screen and (min-width: 90em) {
-    .uikit-grid nav.top-navigation .container.inner-container {
-        width: 84em;
-    }
+@media only screen and (min-width: 992px) {
+	.uikit-grid nav.top-navigation .container.inner-container {
+	    width: 83.333%;
+	}
 }
 
 /* End Alignment etc */
