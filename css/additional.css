@@ -2516,16 +2516,16 @@ nav.local-nav {z-index:119;}
 /**********************************************************************/
 /*                      Margin/padding presets                        */
 /**********************************************************************/
-.mw-80 {max-width:10%;}
-.mw-80 {max-width:20%;}
-.mw-80 {max-width:30%;}
-.mw-80 {max-width:40%;}
-.mw-80 {max-width:50%;}
-.mw-80 {max-width:60%;}
-.mw-80 {max-width:70%;}
+.mw-10 {max-width:10%;}
+.mw-20 {max-width:20%;}
+.mw-30 {max-width:30%;}
+.mw-40 {max-width:40%;}
+.mw-50 {max-width:50%;}
+.mw-60 {max-width:60%;}
+.mw-70 {max-width:70%;}
 .mw-80 {max-width:80%;}
-.mw-80 {max-width:90%;}
-.mw-80 {max-width:100%;}
+.mw-90 {max-width:90%;}
+.mw-100 {max-width:100%;}
 
 .mh-10 {max-height:10%;}
 .mh-20 {max-height:20%;}
