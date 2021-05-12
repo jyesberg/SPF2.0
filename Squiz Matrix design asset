@@ -1,6 +1,7 @@
 <MySource_AREA id_name="editplus" design_area="editplus"/>
 
 <MySource_AREA id_name="template_options" design_area="declared_vars" print="no">
+    <MySource_DECLARE name="body_class" value="" type="text" description="add a class to the body tag"/>
     <MySource_DECLARE name="middlecolumn" value="col-md-8" type="text" description="col-md-8 for subpages with sidenav, col-md-10 col-md-offset-1 for home page and pages without sidenav"/>
     <MySource_DECLARE name="breadcrumbs_banner_colour" value="gradient-navy-violet" type="text" description="Put in either gradient-colour-colour or primary-colour, note this is strictly for the breadcrumbs banner"/>
 </MySource_AREA>
@@ -25,7 +26,7 @@
     <MySource_DECLARE name="header_logo" value="./?a=1115272" type="text" description="URL for Actgov logo"/>
     <MySource_DECLARE name="news" value="#" type="text" description="URL for News footer link"/>
     <MySource_DECLARE name="breadcrumbs_home" value="/" type="text" description="/ for root level sites, asset number or relative path for subsites"/>
-    <MySource_DECLARE name="feedback" value="https://www.accesscanberra.act.gov.au/app/ask/" type="text" description="URL for Feedback footer link"/>
+    <MySource_DECLARE name="feedback" value="https://www.accesscanberra.act.gov.au/s/feedback-and-complaints" type="text" description="URL for Feedback footer link"/>
     <MySource_DECLARE name="languages" value="#" type="text" description="URL for Languages footer link"/>
     <MySource_DECLARE name="sitemap" value="#" type="text" description="URL for Sitemap footer link"/>
     <MySource_DECLARE name="jobs" value="http://www.jobs.act.gov.au" type="text" description="URL for Jobs ACT footer link"/>
@@ -58,7 +59,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 
-<body class='spf-body uikit-body uikit-grid matrix'>
+<body class='spf-body uikit-body uikit-grid matrix <MySource_PRINT id_name="template_options" var="body_class" />'>
 <!--noindex-->
 <MySource_AREA id_name="warning_alert" design_area="nest_content" />
     <a id="skip" href="#main">Skip to content</a>
@@ -415,8 +416,9 @@
     <script src="./?a=1159370"></script>
     <script src="./?a=1159372"></script>
     <script src="./?a=1159373"></script>
-    <script src="./?a=1159374"></script>
+    <script src="./?a=1757598"></script>
     <script src="./?a=1405437"></script>
+    <script src="./?a=1676341"></script>
     <MySource_AREA id_name="additional_javascript" design_area="nest_content" />
     <script src="https://use.fortawesome.com/8411237a.js"></script>
 
