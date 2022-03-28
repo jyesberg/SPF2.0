@@ -1,6 +1,8 @@
-// if scroll top > 163
+//if scroll top > 163
 $(window).scroll(function() {
-    163 < $(window).scrollTop() ? $('nav.top-navigation').addClass('top') : $('nav.top-navigation').removeClass('top');
+    if ($('nav.top-navigation.no-sticky').length == 0 ) {
+        163 < $(window).scrollTop() ? $('nav.top-navigation').addClass('top') : $('nav.top-navigation').removeClass('top');
+    }
 });
 
 
